@@ -1,0 +1,11 @@
+{
+  "name": "appliedai-solutions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html dist/index.html",
+    "dev": "python3 -m http.server 4321",
+    "preview": "python3 -m http.server 4321 -d dist"
+  }
+}

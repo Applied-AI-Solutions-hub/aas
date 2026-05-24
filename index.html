@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Applied AI Solutions is rebuilding its website. The new experience is under construction."
+    />
+    <meta name="theme-color" content="#070b16" />
+    <title>Applied AI Solutions - Under Construction</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #070b16;
+        --panel: rgba(255, 255, 255, 0.055);
+        --line: rgba(255, 255, 255, 0.14);
+        --text: #f8fafc;
+        --muted: #a6b1c2;
+        --cyan: #24c8ff;
+        --green: #5ff0b2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100svh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 28px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 50% 0%, rgba(36, 200, 255, 0.22), transparent 34rem),
+          radial-gradient(circle at 80% 85%, rgba(95, 240, 178, 0.10), transparent 28rem),
+          var(--bg);
+      }
+
+      main {
+        width: min(760px, 100%);
+        display: grid;
+        gap: 28px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: var(--muted);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .mark {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(36, 200, 255, 0.22), rgba(95, 240, 178, 0.14));
+        border: 1px solid rgba(36, 200, 255, 0.34);
+        color: var(--cyan);
+        font-weight: 900;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), var(--panel));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28), inset 0 1px rgba(255, 255, 255, 0.08);
+        padding: clamp(28px, 6vw, 54px);
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--cyan);
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 10ch;
+        margin: 0;
+        font-size: clamp(3rem, 12vw, 6.8rem);
+        line-height: 0.9;
+        letter-spacing: -0.075em;
+      }
+
+      .copy {
+        max-width: 620px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: clamp(1.03rem, 2.4vw, 1.2rem);
+        line-height: 1.65;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 10px 16px;
+        color: #06101d;
+        background: #ffffff;
+        font-weight: 850;
+        text-decoration: none;
+      }
+
+      a.secondary {
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid var(--line);
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 99px;
+        background: var(--green);
+        box-shadow: 0 0 24px rgba(95, 240, 178, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="brand" aria-label="Applied AI Solutions">
+        <div class="mark" aria-hidden="true">AI</div>
+        <span>Applied AI Solutions</span>
+      </div>
+
+      <section class="panel" aria-labelledby="page-title">
+        <p class="eyebrow">Under Construction</p>
+        <h1 id="page-title">We are rebuilding.</h1>
+        <p class="copy">
+          Applied AI Solutions is rebuilding the site around Beacon, our local-first AI companion
+          for practical business workflows. The new experience is coming soon.
+        </p>
+        <div class="actions">
+          <a href="mailto:info@appliedai.solutions">Contact us</a>
+          <a class="secondary" href="mailto:info@appliedai.solutions?subject=Free%20AI%20Audit%20Request">
+            Request an AI audit
+          </a>
+        </div>
+      </section>
+
+      <div class="status">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Beacon and Applied AI Solutions are being rebuilt from a clean foundation.</span>
+      </div>
+    </main>
+  </body>
+</html>
