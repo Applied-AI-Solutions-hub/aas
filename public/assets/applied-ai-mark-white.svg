@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI mark white</title>
+  <desc id="desc">Single-color rounded A mark used as the canonical Applied AI Solutions icon.</desc>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M113 395 233 130c9-19 37-19 46 0l120 265" stroke-width="58"/>
+    <path d="M207 320h98" stroke-width="50"/>
+  </g>
+</svg>

@@ -1,0 +1,315 @@
+---
+import "../styles/global.css";
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Applied AI Solutions helps businesses plan, implement, and govern practical AI workflows with clear human approval boundaries."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Applied AI Solutions | Practical AI Consulting</title>
+    <noscript>
+      <style>
+        .site-intro {
+          display: none;
+        }
+
+        .site-page-content {
+          opacity: 1;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="aas-page aas-landing site-intro-active">
+    <div class="site-intro" data-site-intro aria-label="Applied AI Solutions intro">
+      <video
+        class="site-intro-video"
+        data-site-intro-video
+        autoplay
+        muted
+        playsinline
+        preload="auto"
+        poster="/assets/aas-intro-loader-poster.jpg"
+      >
+        <source src="/assets/aas-intro-loader.mp4" type="video/mp4" />
+      </video>
+      <button class="site-intro-skip" type="button" data-site-intro-skip>Skip</button>
+    </div>
+
+    <div class="site-page-content" data-site-page-content>
+      <header class="site-header aas-site-header">
+        <nav class="nav shell" aria-label="Main navigation">
+          <a class="brand" href="/">
+            <img
+              class="brand-header-mark"
+              src="/assets/aas-header-neon-mark.jpg"
+              alt="Applied AI Solutions"
+              width="512"
+              height="512"
+            />
+          </a>
+          <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#beacon">Beacon</a>
+            <a class="button secondary" href="mailto:info@appliedai.solutions">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+      <section class="aas-home-hero" aria-labelledby="hero-title">
+        <div class="aas-home-cinema" aria-hidden="true">
+          <video autoplay muted loop playsinline preload="metadata" poster="/assets/aas-home-logo-loop-poster.jpg">
+            <source src="/assets/aas-home-logo-loop.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="shell aas-home-hero-grid">
+          <div class="aas-home-copy" data-animate>
+            <p class="eyebrow">AI consulting for practical business work</p>
+            <h1 id="hero-title">Turn AI from scattered experiments into useful operating systems.</h1>
+            <p class="lead">
+              Applied AI Solutions helps teams identify where AI belongs, redesign the workflow
+              around it, and implement tools that keep people in control of important decisions.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">
+                Start a strategy call
+              </a>
+              <a class="button secondary" href="#services">See how we help</a>
+            </div>
+            <div class="aas-hero-proof" aria-label="Applied AI Solutions working principles">
+              <span>Strategy</span>
+              <span>Workflow buildout</span>
+              <span>Human approval</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section aas-section">
+        <div class="shell">
+          <div class="section-header" data-animate>
+            <p class="eyebrow">Services</p>
+            <h2>AI work that starts with the business problem.</h2>
+            <p class="section-copy">
+              We focus on the places AI can reduce friction without making the business harder to
+              manage: documents, intake, customer follow-up, internal knowledge, reporting, and
+              repeatable decisions.
+            </p>
+          </div>
+
+          <div class="aas-service-grid">
+            <article class="aas-service" data-animate>
+              <span>01</span>
+              <h3>AI strategy and roadmap</h3>
+              <p>Identify where AI can help, where it should stay out, and what to build first.</p>
+            </article>
+            <article class="aas-service" data-animate>
+              <span>02</span>
+              <h3>Workflow implementation</h3>
+              <p>Build practical automations around the tools, files, and approvals already in use.</p>
+            </article>
+            <article class="aas-service" data-animate>
+              <span>03</span>
+              <h3>Private knowledge systems</h3>
+              <p>Make policies, SOPs, documents, and history easier to search and act on.</p>
+            </article>
+            <article class="aas-service" data-animate>
+              <span>04</span>
+              <h3>Training and governance</h3>
+              <p>Give owners and staff clear playbooks, review points, and quality checks.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section aas-section aas-process-section">
+        <div class="shell aas-process">
+          <div data-animate>
+            <p class="eyebrow">Process</p>
+            <h2>Simple enough to start. Serious enough to run.</h2>
+            <p class="section-copy">
+              The goal is not to bolt on another chatbot. The goal is to understand the work,
+              remove repeated friction, and leave behind systems the team can trust.
+            </p>
+          </div>
+
+          <ol class="aas-process-list" data-animate>
+            <li>
+              <span>01</span>
+              <strong>Map the workflow</strong>
+              <p>Clarify goals, bottlenecks, risk boundaries, files, tools, and decision points.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>Design the first useful system</strong>
+              <p>Choose a narrow implementation that can prove value quickly without disrupting the business.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Build with approvals visible</strong>
+              <p>Keep sensitive actions, customer communication, and business decisions reviewable.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <strong>Train the team</strong>
+              <p>Document ownership, handoff rules, quality checks, and what to do when AI is wrong.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section aas-section">
+        <div class="shell aas-outcomes" data-animate>
+          <div>
+            <p class="eyebrow">Outcomes</p>
+            <h2>What should feel different after the work.</h2>
+          </div>
+          <ul class="aas-outcome-list">
+            <li>Less time spent searching for the right document, answer, or next step.</li>
+            <li>Cleaner intake and follow-up workflows for customers, staff, and owners.</li>
+            <li>Useful automation without hiding risk or removing human accountability.</li>
+            <li>Playbooks that make AI adoption repeatable instead of personality-driven.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="beacon" class="section aas-section">
+        <div class="shell aas-beacon-callout" data-animate>
+          <div>
+            <p class="eyebrow">Product lab</p>
+            <h2>Beacon is where we test local-first AI workflows before they become client patterns.</h2>
+            <p class="section-copy">
+              Beacon is the Applied AI Solutions Alpha Build: a privacy-respecting companion layer
+              for memory, approvals, document workflows, and eventually an installable AI workstation
+              environment.
+            </p>
+          </div>
+          <a class="button beacon-nav" href="/beacon/">View Beacon Alpha</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section aas-section aas-contact">
+        <div class="shell aas-contact-inner" data-animate>
+          <div>
+            <p class="eyebrow">Next step</p>
+            <h2>Start with one workflow worth fixing.</h2>
+            <p class="section-copy">
+              Send the business problem, the tools involved, and what slows the team down. We will
+              turn that into a practical first plan.
+            </p>
+          </div>
+          <a class="button" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">
+            Email Applied AI Solutions
+          </a>
+        </div>
+      </section>
+      </main>
+
+      <footer class="footer">
+        <div class="shell">
+          <a class="footer-brand" href="/" aria-label="Applied AI Solutions home">
+            <img src="/assets/aas-wordmark-on-dark-transparent.png" alt="Applied AI Solutions" width="793" height="283" />
+          </a>
+          <span>© {year}</span>
+          <div class="footer-links">
+            <a href="/beacon/">Beacon</a>
+            <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      import { animate, inView, stagger } from "motion";
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const intro = document.querySelector("[data-site-intro]");
+      const introVideo = document.querySelector("[data-site-intro-video]");
+      const introSkip = document.querySelector("[data-site-intro-skip]");
+
+      let introFinished = false;
+      let scheduledFade = 0;
+
+      const finishIntro = () => {
+        if (!(intro instanceof HTMLElement)) {
+          document.body.classList.remove("site-intro-active");
+          return;
+        }
+
+        if (introFinished || intro.classList.contains("is-exiting")) {
+          return;
+        }
+
+        introFinished = true;
+        window.clearTimeout(scheduledFade);
+        intro.classList.add("is-exiting");
+        document.body.classList.remove("site-intro-active");
+
+        window.setTimeout(() => {
+          document.body.classList.add("site-intro-revealing");
+        }, 240);
+
+        window.setTimeout(() => {
+          document.body.classList.remove("site-intro-revealing");
+          intro.remove();
+        }, 1500);
+      };
+
+      if (reduceMotion) {
+        finishIntro();
+      } else if (introVideo instanceof HTMLVideoElement) {
+        const introFallback = window.setTimeout(finishIntro, 6900);
+        const scheduleEarlyFade = () => {
+          const duration = Number.isFinite(introVideo.duration) ? introVideo.duration : 6.04;
+          const delay = Math.max(900, (duration - 1.15) * 1000);
+          scheduledFade = window.setTimeout(finishIntro, delay);
+        };
+
+        if (Number.isFinite(introVideo.duration) && introVideo.duration > 0) {
+          scheduleEarlyFade();
+        } else {
+          introVideo.addEventListener("loadedmetadata", scheduleEarlyFade, { once: true });
+        }
+
+        introVideo.addEventListener("ended", () => {
+          window.clearTimeout(introFallback);
+          window.clearTimeout(scheduledFade);
+          finishIntro();
+        }, { once: true });
+        introVideo.addEventListener("error", () => {
+          window.clearTimeout(introFallback);
+          window.clearTimeout(scheduledFade);
+          finishIntro();
+        }, { once: true });
+        introVideo.play().catch(() => {
+          window.setTimeout(finishIntro, 900);
+        });
+      } else {
+        finishIntro();
+      }
+
+      if (introSkip instanceof HTMLButtonElement) {
+        introSkip.addEventListener("click", finishIntro);
+      }
+
+      if (!reduceMotion) {
+        inView("[data-animate]", (element) => {
+          animate(
+            element,
+            { opacity: [0, 1], transform: ["translateY(18px)", "translateY(0)"] },
+            { duration: 0.58, delay: stagger(0.035), easing: [0.22, 1, 0.36, 1] }
+          );
+        }, { margin: "0px 0px -10% 0px" });
+      }
+    </script>
+  </body>
+</html>

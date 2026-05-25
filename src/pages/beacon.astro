@@ -1,0 +1,197 @@
+---
+import "../styles/global.css";
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Beacon is the Applied AI Solutions Alpha Build: a local-first AI operating environment for private memory, visible approvals, workflow automation, and the path toward BeaconOS."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Beacon Alpha Build | Applied AI Solutions</title>
+    <noscript>
+      <style>
+        [data-hero-item],
+        [data-animate-card],
+        .beacon-video-reveal {
+          opacity: 1;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="beacon-page">
+    <header class="site-header beacon-header">
+      <nav class="nav shell" aria-label="Beacon navigation">
+        <a class="brand" href="/">
+          <img
+            class="brand-header-mark"
+            src="/assets/aas-header-neon-mark.jpg"
+            alt="Applied AI Solutions"
+            width="512"
+            height="512"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="/">AAS</a>
+          <a href="#platform">Platform</a>
+          <a href="#beaconos">BeaconOS</a>
+          <a class="button secondary" href="mailto:info@appliedai.solutions?subject=Beacon%20Alpha%20Build">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="beacon-hero" aria-labelledby="beacon-title" data-beacon-hero>
+        <div class="beacon-hero-media" aria-hidden="true">
+          <div class="beacon-scan-field"></div>
+          <div class="beacon-video-reveal beacon-cinematic-reveal" data-beacon-video>
+            <video class="beacon-reveal-video" data-beacon-reveal-video autoplay muted playsinline preload="auto" poster="/assets/beacon-hero-loop-poster.jpg">
+              <source src="/assets/beacon-hero-loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <div class="shell beacon-hero-grid">
+          <div class="beacon-copy" data-hero-copy>
+            <p class="eyebrow" data-hero-item>Beacon Alpha Build</p>
+            <h1 id="beacon-title" data-hero-item>A local-first AI environment for the work your business owns.</h1>
+            <p class="lead" data-hero-item>
+              Beacon is the AAS product lab: private memory, visible approvals, document workflows,
+              and a companion interface designed to become BeaconOS, an installable AI workstation
+              environment for a PC.
+            </p>
+            <div class="hero-actions" data-hero-item>
+              <a class="button" data-beacon-state="ready" href="mailto:info@appliedai.solutions?subject=Beacon%20Alpha%20Build">
+                Talk about Beacon
+              </a>
+              <a class="button secondary" data-beacon-state="listening" href="/">Back to AAS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="section beacon-section">
+        <div class="shell" data-animate>
+          <div class="section-header">
+            <p class="eyebrow">What Beacon is becoming</p>
+            <h2>Not another chatbot. A controlled AI workstation layer.</h2>
+            <p class="section-copy">
+              Beacon is built around the same consulting principles AAS brings to client work:
+              map the workflow, keep humans in charge, and automate the parts that are actually
+              worth automating.
+            </p>
+          </div>
+          <div class="grid-3">
+            <article class="card beacon-card" data-animate-card>
+              <h3>Local memory</h3>
+              <p>Workspace context stays close to the machine and becomes useful across sessions.</p>
+            </article>
+            <article class="card beacon-card" data-animate-card>
+              <h3>Visible approvals</h3>
+              <p>External actions stay reviewable before they change accounts, files, or customers.</p>
+            </article>
+            <article class="card beacon-card" data-animate-card>
+              <h3>Workflow tools</h3>
+              <p>Documents, inboxes, research, automations, and reporting connect through one operating surface.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="beaconos" class="section">
+        <div class="shell" data-animate>
+          <div class="beacon-roadmap">
+            <div>
+              <p class="eyebrow">BeaconOS direction</p>
+              <h2>Alpha Build now. Installable AI environment next.</h2>
+              <p class="section-copy">
+                The current product direction is not to pretend the OS exists today. Beacon is in
+                Alpha Build as an AAS project, with BeaconOS as the long-term distro/workstation
+                direction.
+              </p>
+            </div>
+            <ol class="roadmap-list">
+              <li data-animate-card><span>01</span> Windows/WSL companion runtime</li>
+              <li data-animate-card><span>02</span> Packaged local installer</li>
+              <li data-animate-card><span>03</span> Dedicated BeaconOS image</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <a class="footer-brand" href="/" aria-label="Applied AI Solutions home">
+          <img src="/assets/aas-wordmark-on-dark-transparent.png" alt="Applied AI Solutions" width="793" height="283" />
+        </a>
+        <span>© {year}</span>
+        <div class="footer-links">
+          <a href="/">Applied AI Solutions</a>
+          <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      import { animate, inView, stagger } from "motion";
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const videoReveal = document.querySelector("[data-beacon-video]");
+      const revealVideo = document.querySelector("[data-beacon-reveal-video]");
+
+      if (videoReveal instanceof HTMLElement && revealVideo instanceof HTMLVideoElement) {
+        revealVideo.addEventListener("ended", () => {
+          videoReveal.classList.add("has-frozen");
+        }, { once: true });
+      }
+
+      if (!reduceMotion) {
+        const heroItems = Array.from(document.querySelectorAll("[data-hero-item]"));
+        const revealStage = document.querySelector("[data-beacon-video]");
+
+        animate(
+          heroItems,
+          { opacity: [0, 1], transform: ["translateY(28px)", "translateY(0)"] },
+          { duration: 0.82, delay: stagger(0.09, { startDelay: 0.12 }), easing: [0.22, 1, 0.36, 1] }
+        );
+
+        if (revealStage instanceof HTMLElement) {
+          revealStage.classList.add("is-running");
+          animate(
+            revealStage,
+            { opacity: [0, 1], filter: ["blur(12px) brightness(0.88)", "blur(0px) brightness(1.04)"] },
+            { duration: 1.15, delay: 0.05, easing: [0.22, 1, 0.36, 1] }
+          );
+
+          window.setTimeout(() => {
+            revealStage.classList.add("has-settled");
+          }, 2800);
+        }
+
+        inView("[data-animate]", (element) => {
+          animate(
+            element,
+            { opacity: [0, 1], transform: ["translateY(22px)", "translateY(0)"] },
+            { duration: 0.72, delay: stagger(0.05), easing: [0.22, 1, 0.36, 1] }
+          );
+        }, { margin: "0px 0px -12% 0px" });
+
+        inView("[data-animate-card]", (element) => {
+          animate(
+            element,
+            { opacity: [0, 1], transform: ["translateY(18px) scale(0.985)", "translateY(0) scale(1)"] },
+            { duration: 0.58, easing: [0.22, 1, 0.36, 1] }
+          );
+        }, { margin: "0px 0px -10% 0px" });
+      } else if (videoReveal instanceof HTMLElement) {
+        videoReveal.classList.add("has-settled");
+      }
+    </script>
+  </body>
+</html>

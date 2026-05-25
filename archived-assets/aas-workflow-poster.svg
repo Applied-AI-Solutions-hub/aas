@@ -1,0 +1,41 @@
+<svg width="1280" height="800" viewBox="0 0 1280 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" fill="#06111A"/>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <g opacity=".16">
+    <path d="M0 120H1280M0 240H1280M0 360H1280M0 480H1280M0 600H1280M0 720H1280" stroke="#F5FBFF"/>
+    <path d="M120 0V800M240 0V800M360 0V800M480 0V800M600 0V800M720 0V800M840 0V800M960 0V800M1080 0V800M1200 0V800" stroke="#F5FBFF"/>
+  </g>
+  <path d="M-80 680C250 480 470 536 650 366C810 214 1020 218 1360 84" stroke="#27D9FF" stroke-width="6" opacity=".38"/>
+  <path d="M-80 716C258 548 512 594 720 420C898 272 1082 300 1360 206" stroke="#65E5AD" stroke-width="4" opacity=".34"/>
+  <g filter="url(#shadow)">
+    <rect x="92" y="78" width="742" height="312" rx="28" fill="#0B1D2B" fill-opacity=".86" stroke="#DAEDF7" stroke-opacity=".18"/>
+    <text x="132" y="150" fill="#BFF3FF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">APPLIED AI SOLUTIONS</text>
+    <text x="132" y="238" fill="#F5FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">Workflow to roadmap.</text>
+    <text x="132" y="304" fill="#A8BDC8" font-family="Segoe UI, Arial, sans-serif" font-size="30">Audit, approvals, automation, training.</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="102" y="502" width="250" height="170" rx="22" fill="#102737" stroke="#DAEDF7" stroke-opacity=".18"/>
+    <rect x="132" y="532" width="46" height="46" rx="14" fill="#27D9FF"/>
+    <text x="132" y="626" fill="#F5FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="750">Audit</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="390" y="502" width="250" height="170" rx="22" fill="#102737" stroke="#DAEDF7" stroke-opacity=".18"/>
+    <rect x="420" y="532" width="46" height="46" rx="14" fill="#F2C96D"/>
+    <text x="420" y="626" fill="#F5FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="750">Roadmap</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="678" y="502" width="250" height="170" rx="22" fill="#102737" stroke="#DAEDF7" stroke-opacity=".18"/>
+    <rect x="708" y="532" width="46" height="46" rx="14" fill="#65E5AD"/>
+    <text x="708" y="626" fill="#F5FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="750">Build</text>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1280" y1="0" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset=".48" stop-color="#0D2534"/>
+      <stop offset="1" stop-color="#101926"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1280" height="800" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+</svg>

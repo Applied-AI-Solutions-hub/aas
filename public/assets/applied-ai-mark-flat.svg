@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI mark flat</title>
+  <desc id="desc">Rounded A mark used as the canonical Applied AI Solutions icon.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="104" y1="424" x2="408" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#26e8ff"/>
+      <stop offset="0.48" stop-color="#45a7ff"/>
+      <stop offset="1" stop-color="#236bff"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#markGradient)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M113 395 233 130c9-19 37-19 46 0l120 265" stroke-width="58"/>
+    <path d="M207 320h98" stroke-width="50"/>
+  </g>
+</svg>
