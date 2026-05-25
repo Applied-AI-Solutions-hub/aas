@@ -1,11 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "appliedai-solutions",
+  "main": "src/worker.js",
   "compatibility_date": "2026-05-25",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": "./dist/client",
-    "html_handling": "auto-trailing-slash"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": true
   },
   "observability": {
     "enabled": true
