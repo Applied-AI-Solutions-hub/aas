@@ -6,17 +6,14 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "build": "astro build",
-    "preview": "npm run build && wrangler dev",
+    "preview": "astro preview --host 0.0.0.0",
     "media:setup": "uv venv .venv-media --python 3.12 && uv pip install --python .venv-media/bin/python 'rembg[gpu]' pillow nvidia-cublas-cu12 nvidia-cuda-runtime-cu12 nvidia-curand-cu12 nvidia-cufft-cu12 nvidia-cudnn-cu12",
     "media:beacon-cutout": ".venv-media/bin/python scripts/make-beacon-cutout.py",
     "video:studio": "remotion studio src/video/Root.tsx",
     "video:render": "remotion render src/video/Root.tsx aas-workflow-demo public/assets/aas-workflow-demo.mp4",
-    "video:render:beacon": "remotion render src/video/Root.tsx beacon-alpha-demo public/assets/beacon-alpha-demo.mp4",
-    "generate-types": "wrangler types",
-    "deploy": "npm run build && wrangler deploy"
+    "video:render:beacon": "remotion render src/video/Root.tsx beacon-alpha-demo public/assets/beacon-alpha-demo.mp4"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.5.4",
     "@astrojs/sitemap": "^3.7.2",
     "astro": "^6.3.7",
     "lottie-web": "^5.13.0",
@@ -30,10 +27,6 @@
     "@remotion/media-utils": "^4.0.465",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "remotion": "^4.0.465",
-    "wrangler": "^4.94.0"
-  },
-  "overrides": {
-    "vite": "^7"
+    "remotion": "^4.0.465"
   }
 }
