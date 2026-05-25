@@ -7,16 +7,6 @@
     "directory": "./dist",
     "html_handling": "auto-trailing-slash"
   },
-  "routes": [
-    {
-      "pattern": "appliedai.solutions",
-      "custom_domain": true
-    },
-    {
-      "pattern": "www.appliedai.solutions",
-      "custom_domain": true
-    }
-  ],
   "observability": {
     "enabled": true
   }
