@@ -27,6 +27,7 @@
     "@remotion/media-utils": "^4.0.465",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "remotion": "^4.0.465"
+    "remotion": "^4.0.465",
+    "wrangler": "^4.95.0"
   }
 }
