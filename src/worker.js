@@ -5,8 +5,9 @@ function rewriteAssetRequest(request, pathname) {
 }
 
 function assetPath(pathname) {
-  if (pathname === "/" || pathname === "/index.html") return "/client/index.html";
-  if (pathname === "/beacon" || pathname === "/beacon/") return "/client/beacon/index.html";
+  if (pathname === "/" || pathname === "/index.html") return "/client/";
+  if (pathname === "/beacon" || pathname === "/beacon/") return "/client/beacon/";
+  if (pathname === "/projects" || pathname === "/projects/") return "/client/projects/";
   if (
     pathname.startsWith("/_astro/") ||
     pathname.startsWith("/assets/") ||

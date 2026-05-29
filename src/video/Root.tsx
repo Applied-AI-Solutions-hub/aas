@@ -20,7 +20,7 @@ const beaconSteps = [
   "Local memory",
   "Visible approvals",
   "Document work",
-  "BeaconOS path",
+  "LightHouseOS path",
 ];
 
 function AasWorkflowDemo() {
@@ -269,7 +269,7 @@ function BeaconAlphaDemo() {
             lineHeight: 1.35,
           }}
         >
-          Private memory, human approvals, workflow automation, and a path toward BeaconOS.
+          Private memory, human approvals, workflow automation, and a path toward LightHouseOS.
         </div>
       </div>
       <div

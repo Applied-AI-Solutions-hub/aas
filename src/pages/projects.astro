@@ -1,0 +1,316 @@
+---
+import "../styles/global.css";
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Projects from Applied AI Solutions, including LightHouseOS, Beacon Voice, Beacon Desk, ARC, OpenClaw workflows, and professional AI implementation artifacts."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Projects | Applied AI Solutions</title>
+  </head>
+  <body class="projects-page redesigned-page">
+    <div class="cosmic-backdrop" aria-hidden="true"></div>
+
+    <header class="site-header aas-site-header">
+      <nav class="nav shell" aria-label="Projects navigation">
+        <a class="brand" href="/">
+          <img
+            class="brand-header-mark"
+            src="/assets/aas-logo-current.jpg"
+            alt="Applied AI Solutions"
+            width="512"
+            height="512"
+          />
+          <span class="brand-lockup">
+            <strong>Applied AI</strong>
+            <span>Projects</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="/">AAS</a>
+          <a href="/beacon/">Beacon</a>
+          <a href="#team">Team</a>
+          <a class="button secondary" href="mailto:info@appliedai.solutions">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects-hero" aria-labelledby="projects-title">
+        <div class="shell projects-hero-grid">
+          <div data-animate>
+            <p class="eyebrow">Build portfolio</p>
+            <h1 id="projects-title">Working systems, not slideware.</h1>
+            <p class="lead">
+              Applied AI Solutions builds the practical pieces companies need before AI becomes
+              useful: companion surfaces, approval gates, memory, automation, polished handoffs, and
+              the local runtime discipline that keeps the work understandable.
+            </p>
+            <div class="projects-hero-actions" aria-label="Project page actions">
+              <a class="button" href="#builds">View build lanes</a>
+              <a class="button secondary" href="#team">Meet the dev team</a>
+            </div>
+          </div>
+          <div class="projects-intro-stage" aria-label="Applied AI build system" data-animate>
+            <video autoplay muted loop playsinline preload="metadata" poster="/assets/aas-logo-current.jpg">
+              <source src="/assets/aas-logo-pulse.mp4" type="video/mp4" />
+            </video>
+            <div class="projects-orbit projects-orbit-one">Inbox</div>
+            <div class="projects-orbit projects-orbit-two">Approval</div>
+            <div class="projects-orbit projects-orbit-three">Memory</div>
+            <div class="projects-orbit projects-orbit-four">Handoff</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="builds" class="section redesigned-section">
+        <div class="shell">
+          <div class="section-header" data-animate>
+            <p class="eyebrow">Featured builds</p>
+            <h2>Each project is a reusable pattern we can show, explain, and adapt.</h2>
+            <p class="section-copy">
+              The portfolio is organized around artifacts: what exists, what it proves, and how it
+              turns into client work.
+            </p>
+          </div>
+
+          <div class="project-grid" data-animate>
+            <article class="project-card project-card-featured">
+              <div class="project-media">
+                <video autoplay muted loop playsinline preload="metadata" poster="/assets/beacon-grok-clean-hero-idle-v2-transparent-poster.png">
+                  <source src="/assets/beacon-grok-clean-hero-idle-v2-transparent.webm" type="video/webm" />
+                  <source src="/assets/beacon-grok-clean-hero-idle-v2.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div>
+                <div class="project-meta">
+                  <span class="project-kicker">Product lab</span>
+                  <span class="project-status">Active build</span>
+                </div>
+                <h3>Beacon</h3>
+                <p>
+                  The companion product surfaces for LightHouseOS: Beacon Voice, Beacon Desk,
+                  local-first memory, tool routing, human approval boundaries, and visible state.
+                </p>
+                <ul class="project-evidence" aria-label="Beacon evidence">
+                  <li>Beacon Voice for live collaboration</li>
+                  <li>Beacon Desk desktop companion path</li>
+                  <li>Shared runtime policy, skills, memory, and approvals</li>
+                </ul>
+                <a href="/beacon/">View Beacon</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-artifact" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="project-meta">
+                <span class="project-kicker">Desktop surface</span>
+                <span class="project-status">Prototype</span>
+              </div>
+              <h3>Beacon Desk</h3>
+              <p>
+                A Windows companion shell that makes the local OpenClaw runtime feel like a product:
+                visible state, fast handoff into tools, and desktop-native interaction.
+              </p>
+              <ul class="project-evidence">
+                <li>PowerShell/WPF bridge</li>
+                <li>Windows Fluent direction</li>
+                <li>Compiled app path identified</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-artifact project-artifact-terminal" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="project-meta">
+                <span class="project-kicker">Agent backbone</span>
+                <span class="project-status">Operational</span>
+              </div>
+              <h3>ARC Workspace</h3>
+              <p>
+                The working system behind ARC: durable memory, skills, runtime policy, tool routing,
+                verification habits, and project continuity that survives more than one chat window.
+              </p>
+              <ul class="project-evidence">
+                <li>Workspace instructions and memory</li>
+                <li>Reusable skills and handoffs</li>
+                <li>Verification-before-done discipline</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-artifact project-artifact-flow" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="project-meta">
+                <span class="project-kicker">Client delivery</span>
+                <span class="project-status">Reusable</span>
+              </div>
+              <h3>AI Workflow Systems</h3>
+              <p>
+                Operating patterns for real businesses: inbox triage, document work, reporting,
+                research, approvals, and escalation paths that keep humans in charge.
+              </p>
+              <ul class="project-evidence">
+                <li>Human approval gates</li>
+                <li>Tool-specific task lanes</li>
+                <li>Repeatable implementation playbooks</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-artifact project-artifact-doc" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="project-meta">
+                <span class="project-kicker">Presentation layer</span>
+                <span class="project-status">Client-ready</span>
+              </div>
+              <h3>HTML Handoffs</h3>
+              <p>
+                Self-contained HTML previews, reports, and deliverables that a client can open,
+                inspect, and trust without needing the agent session that produced them.
+              </p>
+              <ul class="project-evidence">
+                <li>Mobile-readable previews</li>
+                <li>Embedded screenshots and context</li>
+                <li>Professional report structure</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-artifact project-artifact-brand" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="project-meta">
+                <span class="project-kicker">Brand system</span>
+                <span class="project-status">In progress</span>
+              </div>
+              <h3>Applied AI Web</h3>
+              <p>
+                The public proof surface for Applied AI Solutions: clear positioning, build evidence,
+                Beacon product storytelling, and a sharper visual system for serious consulting work.
+              </p>
+              <ul class="project-evidence">
+                <li>Astro site foundation</li>
+                <li>Beacon and projects routes</li>
+                <li>Cloudflare deploy path identified</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section redesigned-section projects-proof-section">
+        <div class="shell projects-proof-grid" data-animate>
+          <div>
+            <p class="eyebrow">How we build</p>
+            <h2>We turn vague AI ambition into inspectable systems.</h2>
+          </div>
+          <div class="projects-proof-list">
+            <article>
+              <span>01</span>
+              <h3>Observe the real workflow</h3>
+              <p>Find the repetitive work, risk points, handoff gaps, and decisions that need a human checkpoint.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Build the smallest working surface</h3>
+              <p>Create a tool, companion, report, or automation that proves the workflow can run outside a demo.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Make the system explain itself</h3>
+              <p>Expose status, memory, actions, approvals, and outputs so the work can be trusted and improved.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="section redesigned-section team-section">
+        <div class="shell split-section">
+          <div class="section-header" data-animate>
+            <p class="eyebrow">Dev team</p>
+            <h2>A human-led dev team with agent teammates built into the workflow.</h2>
+            <p class="section-copy">
+              This is part of the point: Applied AI Solutions does not just advise companies to use
+              agents. We run our own work through a human-led team where ARC and Beacon are part of
+              the build process.
+            </p>
+          </div>
+
+          <div class="team-list" data-animate>
+            <article>
+              <span>Founder / builder</span>
+              <h3>Adam</h3>
+              <p>Product direction, client judgment, brand taste, and final approval for external actions.</p>
+            </article>
+            <article>
+              <span>Applied Responsive Companion</span>
+              <h3>ARC</h3>
+              <p>Local engineering teammate for implementation, memory, workflow design, and verification.</p>
+            </article>
+            <article>
+              <span>Companion product</span>
+              <h3>Beacon</h3>
+              <p>The voice-and-desktop companion surface that makes LightHouseOS understandable and trustworthy.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section redesigned-section contact-band">
+        <div class="shell contact-band-inner" data-animate>
+          <div>
+            <p class="eyebrow">Build with us</p>
+            <h2>Show us the workflow. We will help shape the system.</h2>
+          </div>
+          <a class="button" href="mailto:info@appliedai.solutions?subject=Applied%20AI%20Project%20Inquiry">
+            Start a project conversation
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <a class="footer-brand" href="/" aria-label="Applied AI Solutions home">
+          <img src="/assets/aas-logo-current.jpg" alt="Applied AI Solutions" width="512" height="512" />
+        </a>
+        <span>© {year}</span>
+        <div class="footer-links">
+          <a href="/">Applied AI Solutions</a>
+          <a href="/beacon/">Beacon</a>
+          <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      import { animate, inView, stagger } from "motion";
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (!reduceMotion) {
+        inView("[data-animate]", (element) => {
+          animate(
+            element,
+            { opacity: [0, 1], transform: ["translateY(18px)", "translateY(0)"] },
+            { duration: 0.58, delay: stagger(0.035), easing: [0.22, 1, 0.36, 1] }
+          );
+        }, { margin: "0px 0px -10% 0px" });
+      }
+    </script>
+  </body>
+</html>
