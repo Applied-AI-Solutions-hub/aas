@@ -24,17 +24,6 @@ updateProgress();
 window.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("resize", updateProgress);
 
-document.querySelectorAll(".sound-switch").forEach((button) => {
-  button.addEventListener("click", () => {
-    const active = button.getAttribute("aria-pressed") === "true";
-    button.setAttribute("aria-pressed", String(!active));
-    const label = button.querySelector("strong");
-    if (label) {
-      label.textContent = active ? "Off" : "On";
-    }
-  });
-});
-
 if (!reducedMotion) {
   const revealTargets = [
     ".hero-copy",

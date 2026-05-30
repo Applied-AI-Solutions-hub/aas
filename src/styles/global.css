@@ -1096,32 +1096,6 @@ h3 {
   margin-left: auto;
 }
 
-.sound-switch {
-  width: 66px;
-  height: 40px;
-  display: grid;
-  align-content: center;
-  gap: 1px;
-  border: 1px solid rgba(205,232,244,0.14);
-  border-radius: var(--radius);
-  color: rgba(247,251,255,0.76);
-  background: rgba(255,255,255,0.035);
-  font: inherit;
-  text-transform: uppercase;
-  backdrop-filter: blur(14px);
-}
-
-.sound-switch span {
-  font-size: 0.56rem;
-  font-weight: 820;
-  letter-spacing: 0.12em;
-}
-
-.sound-switch strong {
-  font-size: 0.74rem;
-  font-weight: 860;
-}
-
 .cinema-main {
   position: relative;
   overflow: clip;
@@ -1614,14 +1588,6 @@ h3 {
     justify-content: start;
     border: 0;
     background: transparent;
-  }
-
-  .sound-switch {
-    grid-column: 2;
-    grid-row: 1;
-    position: static;
-    justify-self: end;
-    align-self: center;
   }
 
   .cinema-panel {
