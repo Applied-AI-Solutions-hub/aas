@@ -1305,6 +1305,14 @@ h3 {
   pointer-events: none;
 }
 
+.cinema-page-beacon .cinema-main::before {
+  content: "BEACON";
+}
+
+.cinema-page-projects .cinema-main::before {
+  content: "BUILD PROOF";
+}
+
 .chapter-rail {
   position: fixed;
   left: clamp(16px, 3vw, 42px);
@@ -1505,15 +1513,85 @@ h3 {
 }
 
 .cinema-name-stack {
+  display: grid;
+  gap: 10px;
   max-width: 760px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .cinema-name-stack a {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
   border-width: 1px 0;
   border-radius: 0;
   background: rgba(0,0,0,0.16);
   backdrop-filter: blur(10px);
+}
+
+.surface-stack {
+  margin-top: 36px;
+}
+
+.surface-stack a {
+  min-height: 116px;
+  align-content: center;
+  text-decoration: none;
+}
+
+.surface-stack a strong {
+  color: var(--text);
+}
+
+.surface-stack a span {
+  color: rgba(220,232,244,0.68);
+}
+
+.cinema-step-line {
+  display: grid;
+  max-width: 840px;
+  margin-top: 34px;
+  border-top: 1px solid rgba(205,232,244,0.2);
+  border-bottom: 1px solid rgba(205,232,244,0.2);
+}
+
+.cinema-step-line span {
+  min-height: 68px;
+  display: grid;
+  grid-template-columns: minmax(88px, 0.28fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 12px 18px;
+  color: rgba(247,251,255,0.8);
+  background:
+    linear-gradient(90deg, rgba(255,46,159,0.08), transparent 58%),
+    rgba(0,0,0,0.18);
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: clamp(0.78rem, 1vw, 0.98rem);
+  letter-spacing: 0.04em;
+}
+
+.cinema-step-line span + span {
+  border-top: 1px solid rgba(205,232,244,0.14);
+}
+
+.cinema-step-line strong {
+  color: #b9f6ff;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cinema-page-beacon .stage-image-roots,
+.cinema-page-beacon .stage-image-system,
+.cinema-page-projects .stage-image-roots,
+.cinema-page-projects .stage-image-system {
+  object-position: center;
+}
+
+.cinema-page-beacon .stage-image-mark,
+.cinema-page-projects .stage-image-mark {
+  filter: saturate(1.12) contrast(1.08) brightness(0.96) drop-shadow(0 0 94px rgba(255,46,159,0.24));
 }
 
 .cinema-final {
@@ -1629,6 +1707,17 @@ h3 {
   .system-phrases span {
     min-height: 44px;
     place-items: center start;
+  }
+
+  .surface-stack a {
+    min-height: 86px;
+  }
+
+  .cinema-step-line span {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    min-height: 74px;
+    padding: 14px 0;
   }
 
   .origin-caption,

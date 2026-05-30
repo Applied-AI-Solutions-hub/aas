@@ -18,7 +18,7 @@ const year = new Date().getFullYear();
     <link rel="alternate icon" href="/favicon.ico?v=20260530" />
     <title>Projects | Applied AI Solutions</title>
   </head>
-  <body>
+  <body class="cinema-page cinema-page-projects">
     <header class="site-header">
       <nav class="nav shell" aria-label="Projects navigation">
         <a class="brand" href="/">
@@ -38,182 +38,142 @@ const year = new Date().getFullYear();
       </nav>
     </header>
 
-    <main>
-      <section class="hero hero-projects">
-        <div class="hero-art" aria-hidden="true">
-          <img src="/assets/retrowave/retrowave-system-banner.jpg" alt="" width="1500" height="500" />
-          <div class="motion-field">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <main class="cinema-main">
+      <div class="cinema-stage" aria-hidden="true">
+        <canvas class="cinema-webgl" data-cinema-scene></canvas>
+        <img class="stage-image stage-image-roots" src="/assets/retrowave/retrowave-system-banner.jpg" alt="" width="1500" height="500" />
+        <img class="stage-image stage-image-system" src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="" width="1500" height="500" />
+        <img class="stage-image stage-image-mark" src="/assets/retrowave/lighthouseos-retrowave-mark.png" alt="" width="1024" height="1024" />
+        <div class="ridge-map">
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
-        <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Build proof</p>
-            <h1>Working systems, named clearly and built in public enough to trust.</h1>
-            <p class="lead">
-              Applied AI Solutions is built around artifacts: companion surfaces, workflow tools,
-              approval gates, durable memory, and handoffs that can be opened, inspected, and reused.
-            </p>
-            <div class="action-row">
-              <a class="button primary" href="#proof">View proof lanes</a>
-              <a class="button secondary" href="/beacon/">Explore Beacon</a>
-            </div>
-            <a class="scroll-cue" href="#proof">Scroll to discover more</a>
+        <div class="stage-readout" aria-hidden="true">
+          <span>proof signal</span>
+          <strong data-scene-state>route</strong>
+        </div>
+        <div class="stage-grid"></div>
+        <div class="stage-scan"></div>
+      </div>
+
+      <nav class="chapter-rail" aria-label="Page chapters">
+        <a href="#top">00</a>
+        <a href="#proof">01</a>
+        <a href="#lanes">02</a>
+        <a href="#method">03</a>
+        <a href="#contact">04</a>
+      </nav>
+
+      <section id="top" class="cinema-hero cinema-panel" data-stage="system">
+        <div class="shell cinema-copy hero-copy">
+          <p class="cinema-kicker">Build proof / Product lanes / Client patterns</p>
+          <h1>
+            Working systems,
+            <span>not slideware.</span>
+          </h1>
+          <p class="cinema-lead">
+            Applied AI Solutions is built around artifacts: companion surfaces,
+            workflow tools, approval gates, durable memory, and handoffs that can
+            be opened, inspected, and reused.
+          </p>
+          <div class="origin-caption" aria-label="Project proof">
+            <span>Proof lane</span>
+            <strong>Named, bounded, inspectable, and shipped</strong>
           </div>
-          <aside class="system-panel">
-            <div class="panel-header">
-              <span class="status-dot"></span>
-              <strong>Build lanes</strong>
-            </div>
-            <div class="metric-grid">
-              <div><strong>Beacon</strong><span>companion product</span></div>
-              <div><strong>LightHouseOS</strong><span>local-first layer</span></div>
-              <div><strong>ARC</strong><span>agent teammate</span></div>
-              <div><strong>OpenClaw</strong><span>runtime backbone</span></div>
-            </div>
-          </aside>
+          <a class="scroll-cue" href="#proof">View the lanes</a>
         </div>
       </section>
 
-      <section class="route-dock" aria-label="Project routes">
-        <div class="shell route-grid route-grid-three">
-          <a class="route-card" href="/">
-            <span>AAS</span>
-            <strong>Consulting Home</strong>
-            <small>Strategy, implementation, training, and governed automation.</small>
-          </a>
-          <a class="route-card" href="/beacon/">
-            <span>Beacon</span>
-            <strong>Companion System</strong>
-            <small>Voice, Desk, and the front door to LightHouseOS.</small>
-          </a>
-          <a class="route-card featured-route" href="#proof">
-            <span>Proof</span>
-            <strong>Build Lanes</strong>
-            <small>Reusable patterns for client workflow systems.</small>
-          </a>
-        </div>
-      </section>
-
-      <section id="proof" class="section">
-        <div class="shell">
-          <div class="section-copy-block section-lead">
-            <p class="eyebrow">Featured lanes</p>
-            <h2>Each lane is a reusable pattern for client work.</h2>
+      <section id="proof" class="cinema-panel cinema-chapter" data-stage="system">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//01 Proof</span>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              The model is not
+              <span>the deliverable.</span>
+            </h2>
             <p>
-              The point is not to show off a model. The point is to prove that AI work can be
-              named, bounded, inspected, and shipped.
+              The deliverable is the workflow you can trust: a clear surface, a visible
+              boundary, a remembered context, an approval path, and a way to inspect what
+              happened after the system acts.
             </p>
-          </div>
-
-          <div class="case-grid">
-            <article class="case-card case-card-featured">
-              <img src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="" width="1500" height="500" />
-              <div>
-                <span>Product lab</span>
-                <h3>Beacon</h3>
-                <p>Beacon Voice, Beacon Desk, and the companion identity around LightHouseOS.</p>
-                <ul>
-                  <li>Voice collaboration with routed tool work</li>
-                  <li>Desktop companion shell path</li>
-                  <li>Consistent product and marketing language</li>
-                </ul>
-                <a href="/beacon/">View Beacon</a>
-              </div>
-            </article>
-
-            <article class="case-card">
-              <img class="case-mark case-mark-current" src="/assets/retrowave/lighthouseos-retrowave-mark.png" alt="LightHouseOS retrowave mark" width="1024" height="1024" />
-              <span>Platform direction</span>
-              <h3>LightHouseOS</h3>
-              <p>The local-first operating layer for agents, durable goals, memory, tools, voice, and approval routing.</p>
-              <ul>
-                <li>Local secure AGI direction</li>
-                <li>Human approval boundaries</li>
-                <li>Future workstation packaging</li>
-              </ul>
-            </article>
-
-            <article class="case-card">
-              <img class="case-mark case-mark-current" src="/assets/retrowave/aas-retrowave-mark.png" alt="Applied AI Solutions retrowave mark" width="1024" height="1024" />
-              <span>Agent teammate</span>
-              <h3>ARC</h3>
-              <p>The Applied Responsive Companion for implementation, verification, durable memory, and workflow design.</p>
-              <ul>
-                <li>Workspace operating rules</li>
-                <li>Skill and tool routing</li>
-                <li>Verification before done</li>
-              </ul>
-            </article>
-
-            <article class="case-card">
-              <span>Runtime backbone</span>
-              <h3>OpenClaw workflows</h3>
-              <p>Local tools, skills, cron, channels, memory, and approval rules turned into reusable business workflows.</p>
-              <ul>
-                <li>Discord and voice lanes</li>
-                <li>Microsoft 365 read-only checks</li>
-                <li>Approval-gated external actions</li>
-              </ul>
-            </article>
-
-            <article class="case-card">
-              <span>Client delivery</span>
-              <h3>HTML handoffs</h3>
-              <p>Portable reports and previews that work away from home, without requiring localhost or a live agent session.</p>
-              <ul>
-                <li>Self-contained review packets</li>
-                <li>Mobile-readable previews</li>
-                <li>Clear final action scope</li>
-              </ul>
-            </article>
-
-            <article class="case-card">
-              <span>Services</span>
-              <h3>AI workflow systems</h3>
-              <p>Strategy and implementation for inboxes, documents, reports, intake, approvals, training, and follow-up.</p>
-              <ul>
-                <li>Workflow discovery</li>
-                <li>Private knowledge systems</li>
-                <li>Automation with approvals</li>
-              </ul>
-            </article>
+            <div class="system-phrases" aria-label="Project operating loop">
+              <span data-verb="observe">Observe</span>
+              <span data-verb="shape">Shape</span>
+              <span data-verb="build">Build</span>
+              <span data-verb="verify">Verify</span>
+              <span data-verb="govern">Govern</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-contrast">
-        <div class="shell proof-band">
-          <div>
-            <p class="eyebrow">How we build</p>
-            <h2>Observe the workflow, ship the smallest useful surface, then make it explain itself.</h2>
+      <section id="lanes" class="cinema-panel cinema-chapter" data-stage="beacon">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//02 Lanes</span>
+            <a href="/beacon/">Explore Beacon</a>
           </div>
-          <div class="proof-list">
-            <article>
-              <strong>Observe</strong>
-              <p>Find the repetitive work, missing context, handoff gaps, and decision points.</p>
-            </article>
-            <article>
-              <strong>Build</strong>
-              <p>Create a tool, report, automation, or companion surface that proves the workflow.</p>
-            </article>
-            <article>
-              <strong>Govern</strong>
-              <p>Expose memory, actions, approvals, and outputs so the system can be trusted.</p>
-            </article>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              Each lane becomes
+              <span>a reusable pattern.</span>
+            </h2>
+            <p>
+              Beacon proves the companion layer. LightHouseOS proves the local-first
+              operating layer. ARC proves the teammate pattern. OpenClaw workflows prove
+              that tools, memory, channels, and approval rules can become client systems.
+            </p>
+            <div class="cinema-name-stack surface-stack" aria-label="Applied AI project lanes">
+              <a href="/beacon/"><strong>Beacon</strong><span>voice, desk, companion identity</span></a>
+              <a href="#lanes"><strong>LightHouseOS</strong><span>local-first agent layer</span></a>
+              <a href="#lanes"><strong>ARC</strong><span>implementation and verification</span></a>
+              <a href="#lanes"><strong>OpenClaw workflows</strong><span>tools, memory, approvals</span></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section final-cta">
-        <div class="shell cta-band">
-          <div>
-            <p class="eyebrow">Build with us</p>
-            <h2>Show us the workflow. We will shape the system.</h2>
+      <section id="method" class="cinema-panel cinema-chapter" data-stage="roots">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//03 Method</span>
+            <a href="/#services">Services</a>
           </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              Start where the
+              <span>work leaks time.</span>
+            </h2>
+            <p>
+              We observe the workflow, ship the smallest useful surface, then make
+              it explain itself. That means less theater and more systems people can
+              use repeatedly without losing control.
+            </p>
+            <div class="cinema-step-line" aria-label="Applied AI build method">
+              <span><strong>Observe</strong> Repetitive work and missing context</span>
+              <span><strong>Build</strong> A useful tool, report, or companion surface</span>
+              <span><strong>Govern</strong> Memory, actions, approvals, and outputs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cinema-panel cinema-chapter cinema-final" data-stage="mark">
+        <div class="shell cinema-copy final-copy">
+          <p class="cinema-kicker">//04 Build</p>
+          <h2>
+            Show us the workflow.
+            <span>We shape the system.</span>
+          </h2>
+          <p>
+            Intake, documents, reports, scheduling, approvals, training, follow-up,
+            or the internal process that everyone knows needs a better operating layer.
+          </p>
           <a class="button primary" href="mailto:info@appliedai.solutions?subject=Applied%20AI%20Project%20Inquiry">Start a project conversation</a>
         </div>
       </section>

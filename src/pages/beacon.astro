@@ -18,7 +18,7 @@ const year = new Date().getFullYear();
     <link rel="alternate icon" href="/favicon.ico?v=20260530" />
     <title>Beacon | Voice and Desktop Companion for LightHouseOS</title>
   </head>
-  <body>
+  <body class="cinema-page cinema-page-beacon">
     <header class="site-header">
       <nav class="nav shell" aria-label="Beacon navigation">
         <a class="brand" href="/">
@@ -38,169 +38,141 @@ const year = new Date().getFullYear();
       </nav>
     </header>
 
-    <main>
-      <section class="hero hero-beacon">
-        <div class="hero-art" aria-hidden="true">
-          <img src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="" width="1500" height="500" />
-          <div class="motion-field">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <main class="cinema-main">
+      <div class="cinema-stage" aria-hidden="true">
+        <canvas class="cinema-webgl" data-cinema-scene></canvas>
+        <img class="stage-image stage-image-roots" src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="" width="1500" height="500" />
+        <img class="stage-image stage-image-system" src="/assets/retrowave/beacon-retrowave-reveal-loop-poster.jpg" alt="" width="1500" height="844" />
+        <img class="stage-image stage-image-mark" src="/assets/retrowave/beacon-retrowave-mark.png" alt="" width="1024" height="1024" />
+        <div class="ridge-map">
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
-        <div class="shell hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Beacon companion system</p>
-            <h1>A local AI companion with a voice, a desktop presence, and visible boundaries.</h1>
-            <p class="lead">
-              Beacon is the human-facing product surface for LightHouseOS. It brings live
-              collaboration, durable memory, routed tools, and approval-aware action into one
-              recognizable companion experience.
-            </p>
-            <div class="action-row">
-              <a class="button primary" href="#surfaces">View surfaces</a>
-              <a class="button secondary" href="/projects/">See the build proof</a>
-            </div>
-            <a class="scroll-cue" href="#surfaces">Scroll to discover more</a>
-          </div>
+        <div class="stage-readout" aria-hidden="true">
+          <span>companion signal</span>
+          <strong data-scene-state>beacon</strong>
+        </div>
+        <div class="stage-grid"></div>
+        <div class="stage-scan"></div>
+      </div>
 
-          <aside class="beacon-hero-media" aria-label="Beacon companion preview">
-            <video
-              src="/assets/retrowave/beacon-retrowave-reveal-loop.mp4"
-              poster="/assets/retrowave/beacon-retrowave-reveal-loop-poster.jpg"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-            <div class="beacon-media-caption">
-              <span class="status-dot"></span>
-              <strong>Beacon Voice</strong>
-              <span>live collaboration</span>
-            </div>
-            <div class="beacon-surface-pills" aria-label="Beacon product surfaces">
-              <span>Voice</span>
-              <span>Desk</span>
-              <span>LightHouseOS</span>
-            </div>
-          </aside>
+      <nav class="chapter-rail" aria-label="Page chapters">
+        <a href="#top">00</a>
+        <a href="#surfaces">01</a>
+        <a href="#boundaries">02</a>
+        <a href="#path">03</a>
+        <a href="#contact">04</a>
+      </nav>
+
+      <section id="top" class="cinema-hero cinema-panel" data-stage="beacon">
+        <div class="shell cinema-copy hero-copy">
+          <p class="cinema-kicker">Beacon / Voice / Desk / LightHouseOS</p>
+          <h1>
+            A companion
+            <span>with boundaries.</span>
+          </h1>
+          <p class="cinema-lead">
+            Beacon is the human-facing product surface for LightHouseOS. It brings live
+            collaboration, durable memory, routed tools, and approval-aware action into one
+            recognizable companion experience.
+          </p>
+          <div class="origin-caption" aria-label="Beacon status">
+            <span>Current lane</span>
+            <strong>Voice first, desktop next, local system underneath</strong>
+          </div>
+          <a class="scroll-cue" href="#surfaces">Enter Beacon</a>
         </div>
       </section>
 
-      <section class="route-dock" aria-label="Beacon routes">
-        <div class="shell route-grid route-grid-three">
-          <a class="route-card" href="/">
-            <span>AAS</span>
-            <strong>Consulting Home</strong>
-            <small>The business workflow and implementation front door.</small>
-          </a>
-          <a class="route-card featured-route" href="#surfaces">
-            <span>Beacon</span>
-            <strong>Product Surfaces</strong>
-            <small>Voice, Desk, and LightHouseOS in one companion system.</small>
-          </a>
-          <a class="route-card" href="/projects/">
-            <span>Proof</span>
-            <strong>Build Lanes</strong>
-            <small>The work behind ARC, OpenClaw, and local-first operations.</small>
-          </a>
-        </div>
-      </section>
-
-      <section id="surfaces" class="section">
-        <div class="shell section-grid">
-          <div class="section-copy-block">
-            <p class="eyebrow">Product surfaces</p>
-            <h2>Beacon is not one chat window. It is the front door to a governed local system.</h2>
+      <section id="surfaces" class="cinema-panel cinema-chapter" data-stage="beacon">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//01 Surfaces</span>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              Not one
+              <span>chat window.</span>
+            </h2>
             <p>
-              The names matter because the surfaces do different jobs: Beacon Voice handles live
-              collaboration, Beacon Desk gives the local system a desktop presence, and LightHouseOS
-              is the operating layer underneath.
+              Beacon is the front door to a governed local system. Voice handles live
+              collaboration, Desk gives the system presence on the machine, and LightHouseOS
+              carries the local-first layer underneath.
             </p>
-          </div>
-          <div class="tile-grid tile-grid-three">
-            <article>
-              <span>Voice</span>
-              <h3>Beacon Voice</h3>
-              <p>Live working-room collaboration with short answers, routed tool work, and approval gates.</p>
-            </article>
-            <article>
-              <span>Desk</span>
-              <h3>Beacon Desk</h3>
-              <p>A Windows companion shell for local status, quick questions, and desktop-native presence.</p>
-            </article>
-            <article>
-              <span>Core</span>
-              <h3>LightHouseOS</h3>
-              <p>The local-first layer for agents, goals, memory, tools, voice, and human approval policy.</p>
-            </article>
+            <div class="cinema-name-stack surface-stack" aria-label="Beacon product surfaces">
+              <a href="#surfaces"><strong>Beacon Voice</strong><span>live working-room collaboration</span></a>
+              <a href="#surfaces"><strong>Beacon Desk</strong><span>desktop-native presence</span></a>
+              <a href="/projects/"><strong>LightHouseOS</strong><span>agents, goals, memory, tools</span></a>
+              <a href="/projects/"><strong>ARC</strong><span>implementation backbone</span></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-contrast">
-        <div class="shell product-grid product-grid-reverse">
-          <div>
-            <p class="eyebrow">Trust boundary</p>
-            <h2>Useful does not mean uncontrolled.</h2>
+      <section id="boundaries" class="cinema-panel cinema-chapter" data-stage="system">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//02 Boundaries</span>
+            <a href="/projects/">Build proof</a>
+          </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              Useful does not
+              <span>mean uncontrolled.</span>
+            </h2>
             <p>
-              Beacon is designed around explicit permissions. It can help with memory, workflow
-              reasoning, tool routing, and draft preparation, but external actions stay visible and
-              approved by the human owner.
+              Beacon is designed around explicit permissions. It can help with memory,
+              workflow reasoning, tool routing, and draft preparation, while external
+              actions stay visible and approved by the human owner.
             </p>
-            <dl class="signal-list compact">
-              <div>
-                <dt>Private by default</dt>
-                <dd>Local context and workspace memory stay in the local-first operating model.</dd>
-              </div>
-              <div>
-                <dt>Approval before action</dt>
-                <dd>Email, social, account, spending, and customer-facing changes require sign-off.</dd>
-              </div>
-              <div>
-                <dt>Routed execution</dt>
-                <dd>Beacon can hand work to ARC, OpenClaw tools, or documented workflows instead of pretending.</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="media-frame media-frame-current">
-            <img src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="Beacon retrowave identity banner" width="1500" height="500" />
+            <div class="terrain-proof" aria-label="Trust boundaries">
+              <span>Private by default</span>
+              <span>Approval before action</span>
+              <span>Routed execution</span>
+              <span>No pretending at tools</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="shell proof-band">
-          <div>
-            <p class="eyebrow">Build path</p>
-            <h2>From Adam's machine to customer-ready product surfaces.</h2>
+      <section id="path" class="cinema-panel cinema-chapter" data-stage="roots">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//03 Build Path</span>
+            <a href="/projects/">See projects</a>
           </div>
-          <div class="proof-list">
-            <article>
-              <strong>Now</strong>
-              <p>Beacon Voice and ARC work together through OpenClaw, skills, memory, and clear approval rules.</p>
-            </article>
-            <article>
-              <strong>Next</strong>
-              <p>Beacon Desk becomes a polished Windows companion with Fluent-style density and local status.</p>
-            </article>
-            <article>
-              <strong>Later</strong>
-              <p>LightHouseOS becomes an installable local AI operating layer for business workflows.</p>
-            </article>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              From one machine
+              <span>to a product.</span>
+            </h2>
+            <p>
+              Beacon starts where the work is already happening: Adam's workspace, Discord,
+              the desktop shell, local memory, and OpenClaw. The product path is to keep the
+              same companion backbone while making each surface polished enough for real users.
+            </p>
+            <div class="cinema-step-line" aria-label="Beacon build path">
+              <span><strong>Now</strong> Voice and ARC working together</span>
+              <span><strong>Next</strong> Beacon Desk as a polished shell</span>
+              <span><strong>Later</strong> LightHouseOS as an installable layer</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section final-cta">
-        <div class="shell cta-band">
-          <div>
-            <p class="eyebrow">Beacon demos</p>
-            <h2>Talk about a companion surface for your workflow.</h2>
-            <p>Start with one real process: intake, context, approvals, memory, reports, or follow-up.</p>
-          </div>
+      <section id="contact" class="cinema-panel cinema-chapter cinema-final" data-stage="mark">
+        <div class="shell cinema-copy final-copy">
+          <p class="cinema-kicker">//04 Demo</p>
+          <h2>
+            Start with the
+            <span>workflow that needs a companion.</span>
+          </h2>
+          <p>
+            Intake, memory, reports, approvals, follow-up, voice collaboration, or a desktop
+            surface that keeps the work visible without giving away control.
+          </p>
           <a class="button primary" href="mailto:info@appliedai.solutions?subject=Beacon%20Product%20Inquiry">Contact Applied AI Solutions</a>
         </div>
       </section>
