@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 320" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions sketch mountain AA lockup</title>
+  <desc id="desc">Applied AI Solutions logo based on a hand-sketched double-A mountain mark.</desc>
+  <defs>
+    <linearGradient id="ridge" x1="46" y1="226" x2="278" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F63FF"/>
+      <stop offset="0.56" stop-color="#19E4F5"/>
+      <stop offset="1" stop-color="#F0647A"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="54" y1="158" x2="286" y2="158" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0647A"/>
+      <stop offset="0.5" stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#19E4F5"/>
+    </linearGradient>
+    <linearGradient id="wordline" x1="358" y1="249" x2="684" y2="249" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0647A"/>
+      <stop offset="0.62" stop-color="#19E4F5"/>
+      <stop offset="1" stop-color="#6C5CE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1040" height="320" fill="#03040B"/>
+  <g transform="translate(42 38)">
+    <rect x="0" y="0" width="258" height="244" rx="28" fill="#080815"/>
+    <path d="M18 210c37-13 78-20 123-17 37 2 63 11 98 10" fill="none" stroke="#4D456F" stroke-width="7" stroke-linecap="round" opacity=".28"/>
+    <path d="M38 222 L82 62 L166 186" fill="none" stroke="#1F63FF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M166 186 L210 94 L265 195" fill="none" stroke="#19E4F5" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 154c56-2 101-2 135 0 30 2 58 2 85-2" fill="none" stroke="url(#horizon)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M144 154 160 208 181 154M160 208v39" fill="none" stroke="#F7FBFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M75 102 96 60 116 102M202 112 221 94 235 132" fill="none" stroke="#080815" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".74"/>
+    <path d="M38 236c50-7 101-9 152-6 33 2 62 1 86-5" fill="none" stroke="#F0647A" stroke-width="6" stroke-linecap="round" opacity=".72"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" letter-spacing="0">
+    <text x="356" y="128" fill="#F7FBFF" font-size="70" font-weight="760">Applied AI</text>
+    <text x="359" y="206" fill="#D8D2E8" font-size="58" font-weight="580">Solutions</text>
+  </g>
+  <path d="M360 248h224" stroke="url(#wordline)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M604 248h80" stroke="#F7FBFF" stroke-width="7" stroke-linecap="round" opacity=".88"/>
+</svg>

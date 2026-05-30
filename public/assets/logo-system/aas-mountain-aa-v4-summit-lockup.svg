@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 260" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions V4 summit lockup</title>
+  <desc id="desc">Horizontal Applied AI Solutions lockup with a clear double-A mountain mark.</desc>
+  <defs>
+    <linearGradient id="summit" x1="58" y1="186" x2="182" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.46" stop-color="#5C4E9B"/>
+      <stop offset="0.78" stop-color="#E6355E"/>
+      <stop offset="1" stop-color="#ED6575"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="260" fill="#02050A"/>
+  <g transform="translate(36 34)">
+    <rect width="192" height="192" rx="42" fill="#07111C" stroke="#1C5185" stroke-width="3"/>
+    <path fill="url(#summit)" fill-rule="evenodd" d="M26 146 56 28h25l30 118H87l-6-24H51l-6 24zm31-45h18L66 64zM94 146l30-118h25l30 118h-24l-6-24h-30l-6 24zm31-45h18l-9-37z"/>
+    <path d="M45 146h116M52 122h29M120 122h29" fill="none" stroke="#F7FBFF" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" letter-spacing="0">
+    <text x="274" y="118" fill="#F7FBFF" font-size="66" font-weight="800">Applied AI</text>
+    <text x="277" y="176" fill="#DDA9D8" font-size="44" font-weight="650">Solutions</text>
+  </g>
+  <path d="M278 204h310" stroke="#E6355E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M602 204h96" stroke="#19E4F5" stroke-width="5" stroke-linecap="round"/>
+</svg>

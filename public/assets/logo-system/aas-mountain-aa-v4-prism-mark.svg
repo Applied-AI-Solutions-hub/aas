@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions V4 prism mark</title>
+  <desc id="desc">Preview alternate filled double-A mountain mark with cutout counters.</desc>
+  <defs>
+    <linearGradient id="prism" x1="82" y1="396" x2="420" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.4" stop-color="#5C4E9B"/>
+      <stop offset="0.76" stop-color="#E6355E"/>
+      <stop offset="1" stop-color="#ED6575"/>
+    </linearGradient>
+  </defs>
+  <rect x="26" y="26" width="460" height="460" rx="88" fill="#02050A"/>
+  <path fill="url(#prism)" fill-rule="evenodd" d="M82 392 157 118h74l25 92 25-92h74l75 274h-65l-16-64h-65l-28 64-28-64h-65l-16 64zm99-112h46l-23-86zm104 0h46l-23-86z"/>
+  <path d="M154 328h204" stroke="#F7FBFF" stroke-width="20" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions mountain AA mark monochrome</title>
+  <desc id="desc">Monochrome two-peak AA mark for Applied AI Solutions.</desc>
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="#020609"/>
+  <path d="M86 381 184 139c6-15 27-16 35-1l78 151 58-146c6-16 29-17 37-2l69 145" fill="none" stroke="#f7fbff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M159 286h92M330 285h80" fill="none" stroke="#f7fbff" stroke-width="22" stroke-linecap="round"/>
+  <path d="M76 381h360" fill="none" stroke="#f7fbff" stroke-width="18" stroke-linecap="round" opacity="0.62"/>
+</svg>

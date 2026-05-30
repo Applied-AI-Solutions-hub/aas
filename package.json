@@ -7,6 +7,8 @@
     "dev": "astro dev --host 0.0.0.0",
     "build": "astro build && node scripts/mirror-static-output.mjs",
     "preview": "astro preview --host 0.0.0.0",
+    "visual:review": "node scripts/capture-page-screenshots.mjs",
+    "preview:portable": "node scripts/create-portable-preview.mjs",
     "media:setup": "uv venv .venv-media --python 3.12 && uv pip install --python .venv-media/bin/python 'rembg[gpu]' pillow nvidia-cublas-cu12 nvidia-cuda-runtime-cu12 nvidia-curand-cu12 nvidia-cufft-cu12 nvidia-cudnn-cu12",
     "media:beacon-cutout": ".venv-media/bin/python scripts/make-beacon-cutout.py",
     "video:studio": "remotion studio src/video/Root.tsx",
@@ -27,6 +29,7 @@
     "@remotion/media-utils": "^4.0.465",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
+    "puppeteer-core": "^25.1.0",
     "remotion": "^4.0.465",
     "wrangler": "^4.95.0"
   }

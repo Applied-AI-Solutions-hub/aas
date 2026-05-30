@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions mountain AA transparent lockup</title>
+  <desc id="desc">Transparent horizontal Applied AI Solutions logo with two A letters shaped as mountain peaks.</desc>
+  <defs>
+    <linearGradient id="ridge" x1="34" y1="164" x2="176" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14e6c3"/>
+      <stop offset="0.55" stop-color="#29d9ff"/>
+      <stop offset="1" stop-color="#f4fbff"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(34 34)">
+    <rect width="152" height="152" rx="30" fill="#071014"/>
+    <path d="M21 116 54 37c2-5 9-5 12 0l26 50 19-49c2-5 10-5 12 0l23 48" fill="none" stroke="url(#ridge)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 86h33M109 86h29M18 116h118" fill="none" stroke="#e8fcff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="#f7fbff" font-family="Inter, Segoe UI, Arial, sans-serif" letter-spacing="0">
+    <text x="220" y="104" font-size="58" font-weight="780">Applied AI</text>
+    <text x="222" y="156" font-size="40" font-weight="650" fill="#95aab3">Solutions</text>
+  </g>
+  <path d="M222 176h248" stroke="#14e6c3" stroke-width="4" stroke-linecap="round" opacity="0.62"/>
+</svg>

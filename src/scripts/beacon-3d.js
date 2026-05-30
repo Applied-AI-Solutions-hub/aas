@@ -30,13 +30,13 @@ export function mountBeaconStage(host, options = {}) {
   key.castShadow = true;
   scene.add(key);
 
-  const rim = new THREE.PointLight(0x27d9ff, 4.2, 8);
+  const rim = new THREE.PointLight(0x24e6ff, 4.2, 8);
   rim.position.set(2.4, 1.8, 2.4);
   scene.add(rim);
 
   const floorGlow = new THREE.Mesh(
     new THREE.CircleGeometry(1.85, 64),
-    new THREE.MeshBasicMaterial({ color: 0x27d9ff, transparent: true, opacity: 0.14 })
+    new THREE.MeshBasicMaterial({ color: 0x24e6ff, transparent: true, opacity: 0.14 })
   );
   floorGlow.rotation.x = -Math.PI / 2;
   floorGlow.position.y = -1.55;
@@ -155,8 +155,8 @@ function createProceduralBeacon() {
     blue: material(0x0d4db8, 0.55, 0.55),
     dark: material(0x07111f, 0.4, 0.68),
     light: material(0x79e7ff, 0.85, 0.25),
-    glow: new THREE.MeshBasicMaterial({ color: 0x27d9ff, transparent: true, opacity: 0.82 }),
-    green: new THREE.MeshBasicMaterial({ color: 0x65e5ad, transparent: true, opacity: 0.86 }),
+    glow: new THREE.MeshBasicMaterial({ color: 0x24e6ff, transparent: true, opacity: 0.82 }),
+    magenta: new THREE.MeshBasicMaterial({ color: 0xff2e9f, transparent: true, opacity: 0.86 }),
   };
 
   const body = mesh(new THREE.CapsuleGeometry(0.54, 0.76, 6, 16), materials.blue);
@@ -257,7 +257,7 @@ function animateProceduralBeacon(rig, elapsed, pointer, reduced) {
   rig.head.rotation.y = pointer.x * 0.42;
   rig.head.rotation.x = -pointer.y * 0.18;
 
-  const eyeColor = pointer.state === "ready" ? 0x65e5ad : 0x27d9ff;
+  const eyeColor = pointer.state === "ready" ? 0xff2e9f : 0x24e6ff;
   rig.eyes.forEach((eye) => {
     eye.material.color.setHex(eyeColor);
     eye.position.x = eye.userData.baseX + pointer.x * 0.026;

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions V4 ridge mark</title>
+  <desc id="desc">Preview alternate double-A mountain mark with sharper ridge geometry.</desc>
+  <defs>
+    <linearGradient id="ridge" x1="72" y1="396" x2="438" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.52" stop-color="#5C4E9B"/>
+      <stop offset="1" stop-color="#ED6575"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="28" width="456" height="456" rx="84" fill="#02050A"/>
+  <path fill="url(#ridge)" fill-rule="evenodd" d="M77 392 158 112h66l32 111 32-111h66l81 280h-61l-20-70h-73l-25 70-25-70h-73l-20 70zm94-118h48l-24-85zm122 0h48l-24-85z"/>
+  <path d="M121 392h270" fill="none" stroke="#F7FBFF" stroke-width="18" stroke-linecap="round" opacity=".92"/>
+</svg>

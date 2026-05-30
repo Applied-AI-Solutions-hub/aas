@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 260" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions V4 apex lockup</title>
+  <desc id="desc">Horizontal Applied AI Solutions lockup with a polished double-A mountain mark.</desc>
+  <defs>
+    <linearGradient id="aas-v4-apex" x1="44" y1="184" x2="190" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.36" stop-color="#5C4E9B"/>
+      <stop offset="0.72" stop-color="#E6355E"/>
+      <stop offset="1" stop-color="#ED6575"/>
+    </linearGradient>
+    <linearGradient id="aas-v4-cold" x1="78" y1="58" x2="158" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7FBFF"/>
+      <stop offset="0.58" stop-color="#19E4F5"/>
+      <stop offset="1" stop-color="#08A8DE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="260" fill="#02050A"/>
+  <g transform="translate(36 34)">
+    <rect width="192" height="192" rx="42" fill="#07111C" stroke="#1C5185" stroke-width="3"/>
+    <path d="M30 146 62 41c3-8 12-9 17-2l24 40 24-40c5-7 15-6 17 2l32 105" fill="none" stroke="url(#aas-v4-apex)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M60 113h84" fill="none" stroke="#F7FBFF" stroke-width="13" stroke-linecap="round"/>
+    <path d="M102 79 86 113h31z" fill="#07111C"/>
+    <path d="M63 42 75 80M142 42l-12 38" fill="none" stroke="url(#aas-v4-cold)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" letter-spacing="0">
+    <text x="274" y="118" fill="#F7FBFF" font-size="66" font-weight="800">Applied AI</text>
+    <text x="277" y="176" fill="#DDA9D8" font-size="44" font-weight="650">Solutions</text>
+  </g>
+  <path d="M278 204h310" stroke="#E6355E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M602 204h96" stroke="#19E4F5" stroke-width="5" stroke-linecap="round"/>
+</svg>

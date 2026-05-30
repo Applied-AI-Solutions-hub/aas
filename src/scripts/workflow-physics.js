@@ -1,10 +1,10 @@
 import * as THREE from "three";
 
 const ITEMS = [
-  { label: "Intake", color: 0x27d9ff, target: [-1.85, 0.82, 0.2] },
-  { label: "Docs", color: 0x65e5ad, target: [-0.92, -1.1, -0.1] },
-  { label: "Memory", color: 0x5d8cff, target: [0.72, 1.08, 0.1] },
-  { label: "Approval", color: 0xf2c96d, target: [1.82, -0.62, 0.0] },
+  { label: "Intake", color: 0x24e6ff, target: [-1.85, 0.82, 0.2] },
+  { label: "Docs", color: 0xff2e9f, target: [-0.92, -1.1, -0.1] },
+  { label: "Memory", color: 0x8a5cff, target: [0.72, 1.08, 0.1] },
+  { label: "Approval", color: 0xff625f, target: [1.82, -0.62, 0.0] },
   { label: "Report", color: 0xbff3ff, target: [0.12, -1.78, 0.15] },
 ];
 
@@ -16,7 +16,7 @@ function textTexture(label, color) {
   if (!ctx) return null;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "rgba(3, 7, 13, 0.78)";
+  ctx.fillStyle = "rgba(5, 3, 14, 0.82)";
   ctx.strokeStyle = `#${color.toString(16).padStart(6, "0")}`;
   ctx.lineWidth = 3;
   roundRect(ctx, 16, 28, 480, 112, 22);
@@ -49,6 +49,7 @@ export function mountWorkflowPhysics(selector) {
   const host = document.querySelector(selector);
   if (!(host instanceof HTMLElement)) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window.matchMedia("(max-width: 640px)").matches) return;
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.8));
@@ -60,9 +61,9 @@ export function mountWorkflowPhysics(selector) {
   camera.position.set(0, 0, 7.6);
 
   const ambient = new THREE.AmbientLight(0xffffff, 1.3);
-  const key = new THREE.PointLight(0x27d9ff, 18, 9);
+  const key = new THREE.PointLight(0x24e6ff, 18, 9);
   key.position.set(-2.6, 2.4, 3.6);
-  const fill = new THREE.PointLight(0x65e5ad, 9, 8);
+  const fill = new THREE.PointLight(0xff2e9f, 9, 8);
   fill.position.set(2.6, -1.8, 2.8);
   scene.add(ambient, key, fill);
 
@@ -70,7 +71,7 @@ export function mountWorkflowPhysics(selector) {
   scene.add(group);
 
   const loader = new THREE.TextureLoader();
-  const markTexture = loader.load("/assets/aas-logo-current.jpg");
+  const markTexture = loader.load("/assets/retrowave/aas-retrowave-mark.png");
   markTexture.colorSpace = THREE.SRGBColorSpace;
   const mark = new THREE.Mesh(
     new THREE.PlaneGeometry(1.38, 1.38),
@@ -81,7 +82,7 @@ export function mountWorkflowPhysics(selector) {
 
   const ring = new THREE.Mesh(
     new THREE.TorusGeometry(1.18, 0.012, 16, 96),
-    new THREE.MeshBasicMaterial({ color: 0x27d9ff, transparent: true, opacity: 0.34 })
+    new THREE.MeshBasicMaterial({ color: 0x24e6ff, transparent: true, opacity: 0.34 })
   );
   group.add(ring);
 

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions V4 horizon mark</title>
+  <desc id="desc">Preview alternate double-A mountain mark with a shared horizon crossbar.</desc>
+  <defs>
+    <linearGradient id="horizon" x1="96" y1="376" x2="416" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#19E4F5"/>
+      <stop offset="0.44" stop-color="#5C4E9B"/>
+      <stop offset="1" stop-color="#E6355E"/>
+    </linearGradient>
+  </defs>
+  <rect x="26" y="26" width="460" height="460" rx="88" fill="#02050A"/>
+  <path d="M94 384 177 126 256 290 335 126 418 384" fill="none" stroke="url(#horizon)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M136 304h240" fill="none" stroke="#F7FBFF" stroke-width="30" stroke-linecap="round"/>
+  <path d="M256 290 229 304h54z" fill="#02050A"/>
+</svg>

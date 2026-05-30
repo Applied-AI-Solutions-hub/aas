@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions sketch mountain AA mark</title>
+  <desc id="desc">Two A letters shaped as mountain peaks with a shared horizon bar and center valley stroke.</desc>
+  <defs>
+    <linearGradient id="ridge" x1="78" y1="410" x2="422" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F63FF"/>
+      <stop offset="0.48" stop-color="#19E4F5"/>
+      <stop offset="1" stop-color="#F0647A"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="78" y1="274" x2="434" y2="274" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0647A"/>
+      <stop offset="0.5" stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#19E4F5"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="72" fill="#03040B"/>
+  <path d="M52 365c52-19 105-28 159-26 48 2 84 18 126 18 47 0 82-13 123-31" fill="none" stroke="#4D456F" stroke-width="10" stroke-linecap="round" opacity=".28"/>
+  <path d="M70 410c75-28 145-39 211-31 65 8 117-3 166-31" fill="none" stroke="#19E4F5" stroke-width="7" stroke-linecap="round" opacity=".25"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 404 L151 154 L280 350" stroke="#1F63FF" stroke-width="28"/>
+    <path d="M282 350 L350 206 L434 365" stroke="#19E4F5" stroke-width="28"/>
+    <path d="M97 274c90-3 160-3 210 0 45 3 86 4 127-2" stroke="url(#horizon)" stroke-width="24"/>
+    <path d="M244 275 267 360 301 275" stroke="#F7FBFF" stroke-width="22"/>
+    <path d="M267 360v68" stroke="#F7FBFF" stroke-width="22"/>
+    <path d="M141 216 171 154 200 214" stroke="#03040B" stroke-width="10" opacity=".72"/>
+    <path d="M338 234 366 205 386 265" stroke="#03040B" stroke-width="10" opacity=".72"/>
+  </g>
+  <path d="M83 425c78-9 156-12 233-7 50 3 92 1 127-7" fill="none" stroke="#F0647A" stroke-width="9" stroke-linecap="round" opacity=".72"/>
+</svg>

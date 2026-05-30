@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions wordmark</title>
+  <desc id="desc">Applied AI Solutions wordmark with the canonical rounded A mark.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="34" y1="178" x2="178" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#26e8ff"/>
+      <stop offset="0.48" stop-color="#45a7ff"/>
+      <stop offset="1" stop-color="#236bff"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.149 0 0 0 0 0.878 0 0 0 0 1 0 0 0 0.72 0" result="cyanGlow"/>
+      <feMerge>
+        <feMergeNode in="cyanGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="980" height="220" rx="0" fill="#071426"/>
+  <g transform="translate(32 24) scale(.34)" fill="none" stroke="url(#markGradient)" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    <path d="M113 395 233 130c9-19 37-19 46 0l120 265" stroke-width="58"/>
+    <path d="M207 320h98" stroke-width="50"/>
+  </g>
+  <g fill="#eef9ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="760" letter-spacing="0">
+    <text x="220" y="100" font-size="58">Applied AI</text>
+    <text x="222" y="154" font-size="42" fill="#88a9b8" font-weight="650">Solutions</text>
+  </g>
+</svg>

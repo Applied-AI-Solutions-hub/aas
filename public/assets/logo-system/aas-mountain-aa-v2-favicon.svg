@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Applied AI Solutions">
+  <defs>
+    <linearGradient id="peak" x1="16" y1="100" x2="114" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.5" stop-color="#5C4E9B"/>
+      <stop offset="1" stop-color="#E6355E"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="#010510"/>
+  <path d="M14 98 42 28c2-5 10-5 12 0l21 45 17-44c2-6 10-6 13 0l24 58" fill="none" stroke="url(#peak)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 74h30M88 74h27M16 98h96" fill="none" stroke="#F7FBFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M43 29 50 53 38 68M93 30l8 24-13 14" fill="none" stroke="#19E4F5" stroke-width="4" stroke-linecap="round"/>
+</svg>

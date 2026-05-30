@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 260" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions inline mountain wordmark</title>
+  <desc id="desc">Applied AI Solutions wordmark with the two A letters emphasized as paired mountain peaks.</desc>
+  <defs>
+    <linearGradient id="peak" x1="44" y1="190" x2="232" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.5" stop-color="#5C4E9B"/>
+      <stop offset="1" stop-color="#E6355E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1180" height="260" fill="#010510"/>
+  <g transform="translate(36 44)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 144 50 19c4-10 18-10 22 0l47 102 39-101c4-11 20-11 24 0l48 124" stroke="url(#peak)" stroke-width="20"/>
+    <path d="M38 105h68M147 105h70" stroke="#F7FBFF" stroke-width="12"/>
+    <path d="M50 20 67 70 40 100M158 20l18 52-28 30" stroke="#19E4F5" stroke-width="7"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" letter-spacing="0">
+    <text x="304" y="116" fill="#F7FBFF" font-size="60" font-weight="780">Applied AI</text>
+    <text x="306" y="174" fill="#DDA9D8" font-size="44" font-weight="650">Solutions</text>
+  </g>
+  <path d="M307 198h248" stroke="#E6355E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M570 198h86" stroke="#19E4F5" stroke-width="5" stroke-linecap="round"/>
+</svg>

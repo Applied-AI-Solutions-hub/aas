@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 240" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions summit AA lockup</title>
+  <desc id="desc">Horizontal Applied AI Solutions logo with two A letters shaped as mountain peaks.</desc>
+  <defs>
+    <linearGradient id="sky" x1="34" y1="176" x2="178" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.42" stop-color="#5C4E9B"/>
+      <stop offset="0.74" stop-color="#E6355E"/>
+      <stop offset="1" stop-color="#ED6575"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="74" y1="32" x2="150" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4FBFF"/>
+      <stop offset="0.52" stop-color="#19E4F5"/>
+      <stop offset="1" stop-color="#08A8DE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1040" height="240" fill="#010510"/>
+  <g transform="translate(36 36)">
+    <rect width="168" height="168" rx="32" fill="#170E2F"/>
+    <path d="M22 130 56 37c3-8 14-8 18 0l27 56 22-56c3-8 15-8 18 0l25 58" fill="none" stroke="url(#sky)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M56 38 68 76 50 94M124 38l12 38-18 19" fill="none" stroke="url(#ice)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M48 99h42M118 99h37M22 130h124" fill="none" stroke="#F4FBFF" stroke-width="9" stroke-linecap="round"/>
+    <path d="M28 144c28-8 54-8 78 0s44 7 63-1" fill="none" stroke="#19E4F5" stroke-width="4" stroke-linecap="round" opacity="0.56"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" letter-spacing="0">
+    <text x="246" y="111" fill="#F7FBFF" font-size="62" font-weight="780">Applied AI</text>
+    <text x="249" y="166" fill="#DDA9D8" font-size="42" font-weight="650">Solutions</text>
+  </g>
+  <path d="M248 188h286" stroke="#E6355E" stroke-width="5" stroke-linecap="round" opacity="0.82"/>
+  <path d="M545 188h92" stroke="#19E4F5" stroke-width="5" stroke-linecap="round" opacity="0.82"/>
+</svg>

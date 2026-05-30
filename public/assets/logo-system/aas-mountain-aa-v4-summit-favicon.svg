@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions summit favicon</title>
+  <desc id="desc">Simplified double-A mountain favicon.</desc>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="#02050A"/>
+  <path fill="#F7FBFF" fill-rule="evenodd" d="M7 49 17 14h9l10 35h-8l-2-7h-9l-2 7zm12-14h6l-3-11zM29 49l10-35h9l10 35h-8l-2-7h-9l-2 7zm12-14h6l-3-11z"/>
+  <path d="M16 49h32M17 42h9M39 42h9" fill="none" stroke="#19E4F5" stroke-width="3" stroke-linecap="round"/>
+</svg>

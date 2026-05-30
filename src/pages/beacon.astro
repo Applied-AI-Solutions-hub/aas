@@ -11,184 +11,211 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Beacon is the Applied AI Solutions companion surface for LightHouseOS: Beacon Voice, Beacon Desk, private memory, visible approvals, and local-first tool use."
+      content="Beacon is the Applied AI Solutions companion surface for LightHouseOS: Beacon Voice, Beacon Desk, local memory, visible approvals, and OpenClaw-powered tools."
     />
-    <meta name="theme-color" content="#000000" />
-    <title>Beacon | Applied AI Solutions</title>
+    <meta name="theme-color" content="#02050a" />
+    <title>Beacon | Voice and Desktop Companion for LightHouseOS</title>
   </head>
-  <body class="beacon-page redesigned-page">
-    <div class="cosmic-backdrop" aria-hidden="true"></div>
-
-    <header class="site-header beacon-header">
+  <body>
+    <header class="site-header">
       <nav class="nav shell" aria-label="Beacon navigation">
         <a class="brand" href="/">
-          <img
-            class="brand-header-mark"
-            src="/assets/aas-logo-current.jpg"
-            alt="Applied AI Solutions"
-            width="512"
-            height="512"
-          />
-          <span class="brand-lockup">
+          <img src="/assets/retrowave/beacon-retrowave-mark.png" alt="Beacon" width="1024" height="1024" />
+          <span>
             <strong>Beacon</strong>
-            <span>Alpha Build</span>
+            <small>by Applied AI</small>
           </span>
         </a>
         <div class="nav-links">
-          <a href="/">AAS</a>
+          <a href="/">Home</a>
           <a href="/projects/">Projects</a>
-          <a href="#system">System</a>
-          <a class="button secondary" href="mailto:info@appliedai.solutions?subject=Beacon%20Alpha%20Build">Contact</a>
+          <a href="#surfaces">Surfaces</a>
+          <a href="/#services">Services</a>
+          <a class="nav-cta" href="mailto:info@appliedai.solutions?subject=Beacon%20Product%20Inquiry">Contact</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="redesign-hero beacon-product-hero" aria-labelledby="beacon-title">
-        <div class="shell beacon-product-grid">
-          <div class="redesign-hero-copy beacon-product-copy" data-animate>
-            <p class="eyebrow">LightHouseOS product surface</p>
-            <h1 id="beacon-title">Beacon turns a local AI operating layer into something you can talk to.</h1>
+      <section class="hero hero-beacon">
+        <div class="hero-art" aria-hidden="true">
+          <img src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="" width="1500" height="500" />
+          <div class="motion-field">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Beacon companion system</p>
+            <h1>A local AI companion with a voice, a desktop presence, and visible boundaries.</h1>
             <p class="lead">
-              Beacon is the companion layer for LightHouseOS: voice for live collaboration, Desk
-              for desktop presence, durable memory, visible approvals, and human-safe action gates.
+              Beacon is the human-facing product surface for LightHouseOS. It brings live
+              collaboration, durable memory, routed tools, and approval-aware action into one
+              recognizable companion experience.
             </p>
-            <div class="beacon-signal-row" aria-label="Beacon product signals">
-              <span><strong>Beacon Voice</strong> live collaboration</span>
-              <span><strong>Beacon Desk</strong> desktop presence</span>
-              <span><strong>LightHouseOS</strong> local-first core</span>
+            <div class="action-row">
+              <a class="button primary" href="#surfaces">View surfaces</a>
+              <a class="button secondary" href="/projects/">See the build proof</a>
             </div>
-            <div class="hero-actions">
-              <a class="button beacon-nav" href="/projects/">View builds</a>
-              <a class="button secondary" href="mailto:info@appliedai.solutions?subject=Beacon%20Alpha%20Build">
-                Talk about Beacon
-              </a>
-            </div>
+            <a class="scroll-cue" href="#surfaces">Scroll to discover more</a>
           </div>
 
-          <div class="beacon-demo-stage" data-animate aria-label="Beacon product preview">
-            <video autoplay muted loop playsinline preload="metadata" poster="/assets/beacon-grok-clean-hero-idle-v2-transparent-poster.png">
-              <source src="/assets/beacon-aas-product-intro.mp4" type="video/mp4" />
-            </video>
-            <div class="beacon-demo-topbar">
+          <aside class="beacon-hero-media" aria-label="Beacon companion preview">
+            <video
+              src="/assets/retrowave/beacon-retrowave-reveal-loop.mp4"
+              poster="/assets/retrowave/beacon-retrowave-reveal-loop-poster.jpg"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+            <div class="beacon-media-caption">
               <span class="status-dot"></span>
-              <strong>Beacon alpha</strong>
-              <span>Voice + Desk lane</span>
+              <strong>Beacon Voice</strong>
+              <span>live collaboration</span>
             </div>
-            <div class="beacon-demo-rail" aria-hidden="true">
-              <span>Memory</span>
-              <span>Approval</span>
-              <span>Tools</span>
-              <span>Goals</span>
+            <div class="beacon-surface-pills" aria-label="Beacon product surfaces">
+              <span>Voice</span>
+              <span>Desk</span>
+              <span>LightHouseOS</span>
             </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="route-dock" aria-label="Beacon routes">
+        <div class="shell route-grid route-grid-three">
+          <a class="route-card" href="/">
+            <span>AAS</span>
+            <strong>Consulting Home</strong>
+            <small>The business workflow and implementation front door.</small>
+          </a>
+          <a class="route-card featured-route" href="#surfaces">
+            <span>Beacon</span>
+            <strong>Product Surfaces</strong>
+            <small>Voice, Desk, and LightHouseOS in one companion system.</small>
+          </a>
+          <a class="route-card" href="/projects/">
+            <span>Proof</span>
+            <strong>Build Lanes</strong>
+            <small>The work behind ARC, OpenClaw, and local-first operations.</small>
+          </a>
+        </div>
+      </section>
+
+      <section id="surfaces" class="section">
+        <div class="shell section-grid">
+          <div class="section-copy-block">
+            <p class="eyebrow">Product surfaces</p>
+            <h2>Beacon is not one chat window. It is the front door to a governed local system.</h2>
+            <p>
+              The names matter because the surfaces do different jobs: Beacon Voice handles live
+              collaboration, Beacon Desk gives the local system a desktop presence, and LightHouseOS
+              is the operating layer underneath.
+            </p>
+          </div>
+          <div class="tile-grid tile-grid-three">
+            <article>
+              <span>Voice</span>
+              <h3>Beacon Voice</h3>
+              <p>Live working-room collaboration with short answers, routed tool work, and approval gates.</p>
+            </article>
+            <article>
+              <span>Desk</span>
+              <h3>Beacon Desk</h3>
+              <p>A Windows companion shell for local status, quick questions, and desktop-native presence.</p>
+            </article>
+            <article>
+              <span>Core</span>
+              <h3>LightHouseOS</h3>
+              <p>The local-first layer for agents, goals, memory, tools, voice, and human approval policy.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="system" class="section redesigned-section beacon-system-section">
-        <div class="shell beacon-system-grid">
-          <div class="section-header" data-animate>
-            <p class="eyebrow">System direction</p>
-            <h2>A voice-and-desktop companion over a governed local system.</h2>
-            <p class="section-copy">
-              The website explains the work, but the product is Beacon Voice, Beacon Desk, and the
-              LightHouseOS core behind them: persistent context, visible state, practical controls,
-              and the trust boundaries a real business assistant needs.
+      <section class="section section-contrast">
+        <div class="shell product-grid product-grid-reverse">
+          <div>
+            <p class="eyebrow">Trust boundary</p>
+            <h2>Useful does not mean uncontrolled.</h2>
+            <p>
+              Beacon is designed around explicit permissions. It can help with memory, workflow
+              reasoning, tool routing, and draft preparation, but external actions stay visible and
+              approved by the human owner.
             </p>
-          </div>
-          <aside class="ops-panel beacon-panel" aria-label="Beacon build status" data-animate>
-            <div class="ops-panel-header">
-              <span class="status-dot"></span>
-              <strong>LightHouseOS stack</strong>
-            </div>
-            <dl>
+            <dl class="signal-list compact">
               <div>
-                <dt>Core</dt>
-                <dd>OpenClaw runtime, tools, memory, goals, and approval policy.</dd>
+                <dt>Private by default</dt>
+                <dd>Local context and workspace memory stay in the local-first operating model.</dd>
               </div>
               <div>
-                <dt>Companion</dt>
-                <dd>Beacon Voice for conversation and Beacon Desk for desktop presence.</dd>
+                <dt>Approval before action</dt>
+                <dd>Email, social, account, spending, and customer-facing changes require sign-off.</dd>
               </div>
               <div>
-                <dt>Boundary</dt>
-                <dd>Private by default with explicit gates for external actions.</dd>
+                <dt>Routed execution</dt>
+                <dd>Beacon can hand work to ARC, OpenClaw tools, or documented workflows instead of pretending.</dd>
               </div>
             </dl>
-          </aside>
-          <div class="service-list beacon-system-list" data-animate>
+          </div>
+          <div class="media-frame media-frame-current">
+            <img src="/assets/retrowave/beacon-retrowave-banner.jpg" alt="Beacon retrowave identity banner" width="1500" height="500" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell proof-band">
+          <div>
+            <p class="eyebrow">Build path</p>
+            <h2>From Adam's machine to customer-ready product surfaces.</h2>
+          </div>
+          <div class="proof-list">
             <article>
-              <span>01</span>
-              <h3>Durable memory</h3>
-              <p>Project context, decisions, and lessons survive beyond one chat buffer.</p>
+              <strong>Now</strong>
+              <p>Beacon Voice and ARC work together through OpenClaw, skills, memory, and clear approval rules.</p>
             </article>
             <article>
-              <span>02</span>
-              <h3>Routed tools</h3>
-              <p>Voice can route work to ARC, tools, and goals without pretending every action lives in the voice loop.</p>
+              <strong>Next</strong>
+              <p>Beacon Desk becomes a polished Windows companion with Fluent-style density and local status.</p>
             </article>
             <article>
-              <span>03</span>
-              <h3>Human approvals</h3>
-              <p>Public, financial, account, and customer-facing changes require explicit approval.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Product surfaces</h3>
-              <p>Beacon Voice and Beacon Desk make the system feel present without turning the marketing site into the product.</p>
+              <strong>Later</strong>
+              <p>LightHouseOS becomes an installable local AI operating layer for business workflows.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section redesigned-section proof-section beacon-proof-section">
-        <div class="shell feature-callout beacon-feature" data-animate>
+      <section class="section final-cta">
+        <div class="shell cta-band">
           <div>
-            <p class="eyebrow">LightHouseOS path</p>
-            <h2>Voice companion now. Desktop presence next. Local operating layer underneath.</h2>
-            <p class="section-copy">
-              The honest product path starts with Beacon Voice, Beacon Desk, the OpenClaw workspace,
-              and durable goal workflows. The long-term target is LightHouseOS: a local AI
-              environment a business can own.
-            </p>
+            <p class="eyebrow">Beacon demos</p>
+            <h2>Talk about a companion surface for your workflow.</h2>
+            <p>Start with one real process: intake, context, approvals, memory, reports, or follow-up.</p>
           </div>
-          <ol class="compact-steps">
-            <li><span>Now</span> Beacon Voice with ARC-routed tool work</li>
-            <li><span>Next</span> Beacon Desk as the desktop companion</li>
-            <li><span>Later</span> LightHouseOS workstation image</li>
-          </ol>
+          <a class="button primary" href="mailto:info@appliedai.solutions?subject=Beacon%20Product%20Inquiry">Contact Applied AI Solutions</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="shell">
-        <a class="footer-brand" href="/" aria-label="Applied AI Solutions home">
-          <img src="/assets/aas-logo-current.jpg" alt="Applied AI Solutions" width="512" height="512" />
-        </a>
-        <span>© {year}</span>
-        <div class="footer-links">
+      <div class="shell footer-inner">
+        <span>© {year} Applied AI Solutions</span>
+        <nav aria-label="Footer navigation">
           <a href="/">Applied AI Solutions</a>
           <a href="/projects/">Projects</a>
           <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
-        </div>
+        </nav>
       </div>
     </footer>
-
     <script>
-      import { animate, inView, stagger } from "motion";
-
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-      if (!reduceMotion) {
-        inView("[data-animate]", (element) => {
-          animate(
-            element,
-            { opacity: [0, 1], transform: ["translateY(18px)", "translateY(0)"] },
-            { duration: 0.58, delay: stagger(0.035), easing: [0.22, 1, 0.36, 1] }
-          );
-        }, { margin: "0px 0px -10% 0px" });
-      }
+      import "../scripts/site-motion.js";
     </script>
   </body>
 </html>

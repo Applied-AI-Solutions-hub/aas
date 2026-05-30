@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Applied AI Solutions summit AA mark</title>
+  <desc id="desc">Two A letters formed as mountain peaks using the Applied AI Solutions photo palette.</desc>
+  <defs>
+    <linearGradient id="sky" x1="80" y1="420" x2="430" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08A8DE"/>
+      <stop offset="0.42" stop-color="#5C4E9B"/>
+      <stop offset="0.74" stop-color="#E6355E"/>
+      <stop offset="1" stop-color="#ED6575"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="154" y1="104" x2="354" y2="392" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4FBFF"/>
+      <stop offset="0.52" stop-color="#19E4F5"/>
+      <stop offset="1" stop-color="#08A8DE"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="84" fill="#010510"/>
+  <path d="M64 394 158 134c8-22 40-23 50-2l73 154 61-151c9-22 41-22 51 0l67 156" fill="none" stroke="url(#sky)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M157 135 189 223 146 265M343 136l28 92-43 43" fill="none" stroke="url(#ice)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M139 300h110M321 300h92" fill="none" stroke="#F4FBFF" stroke-width="24" stroke-linecap="round"/>
+  <path d="M64 394h384" fill="none" stroke="#DDA9D8" stroke-width="18" stroke-linecap="round" opacity="0.72"/>
+  <path d="M80 420c70-20 134-20 194 0s110 19 158-2" fill="none" stroke="#19E4F5" stroke-width="7" stroke-linecap="round" opacity="0.48"/>
+</svg>

@@ -11,205 +11,195 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Applied AI Solutions helps businesses turn AI ideas into practical workflows, private knowledge systems, team training, and approval-safe automation."
+      content="Applied AI Solutions builds local-first AI systems, private workflow memory, approval-aware automation, and companion tools from the roots of real work."
     />
-    <meta name="theme-color" content="#000000" />
-    <title>Applied AI Solutions | Practical AI Systems</title>
+    <meta name="theme-color" content="#02050a" />
+    <title>Applied AI Solutions | Local AI Systems for Real Work</title>
   </head>
-  <body class="aas-page aas-landing redesigned-page">
-    <div class="cosmic-backdrop" aria-hidden="true"></div>
-
-    <header class="site-header aas-site-header">
+  <body class="cinema-page">
+    <header class="site-header">
       <nav class="nav shell" aria-label="Main navigation">
         <a class="brand" href="/">
-          <img
-            class="brand-header-mark"
-            src="/assets/aas-logo-current.jpg"
-            alt="Applied AI Solutions"
-            width="512"
-            height="512"
-          />
-          <span class="brand-lockup">
+          <img src="/assets/logo-system/aas-mountain-aa-v4-summit-mark.svg" alt="Applied AI Solutions" width="512" height="512" />
+          <span>
             <strong>Applied AI</strong>
-            <span>Solutions</span>
+            <small>Solutions</small>
           </span>
         </a>
         <div class="nav-links">
-          <a href="/projects/">Projects</a>
+          <a href="/">Home</a>
           <a href="/beacon/">Beacon</a>
+          <a href="/projects/">Projects</a>
           <a href="#services">Services</a>
-          <a class="button secondary" href="mailto:info@appliedai.solutions">Contact</a>
+          <a class="nav-cta" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">Contact</a>
         </div>
+        <button class="sound-switch" type="button" aria-pressed="false">
+          <span>Bluegrass</span>
+          <strong>Off</strong>
+        </button>
       </nav>
     </header>
 
-    <main>
-      <section class="redesign-hero aas-redesign-hero" aria-labelledby="hero-title">
-        <div class="hero-media hero-media-aas" aria-hidden="true">
-          <video autoplay muted loop playsinline preload="metadata" poster="/assets/aas-logo-current.jpg">
-            <source src="/assets/aas-logo-pulse.mp4" type="video/mp4" />
-          </video>
+    <main class="cinema-main">
+      <div class="cinema-stage" aria-hidden="true">
+        <canvas class="cinema-webgl" data-cinema-scene></canvas>
+        <img class="stage-image stage-image-roots" src="/assets/retrowave/adam-hills-origin.jpg" alt="" width="763" height="250" />
+        <img class="stage-image stage-image-system" src="/assets/retrowave/retrowave-system-banner.jpg" alt="" width="1500" height="500" />
+        <img class="stage-image stage-image-mark" src="/assets/logo-system/aas-mountain-aa-v4-summit-mark.svg" alt="" width="512" height="512" />
+        <div class="ridge-map">
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
+        <div class="stage-readout" aria-hidden="true">
+          <span>origin signal</span>
+          <strong data-scene-state>roots</strong>
+        </div>
+        <div class="stage-grid"></div>
+        <div class="stage-scan"></div>
+      </div>
 
-        <div class="shell redesign-hero-grid">
-          <div class="redesign-hero-copy" data-animate>
-            <p class="eyebrow">AI consulting for business operators</p>
-            <h1 id="hero-title">Build AI workflows your team can actually run.</h1>
-            <p class="lead">
-              Applied AI Solutions helps companies move from scattered AI experiments to
-              practical systems for intake, documents, knowledge, reporting, training, and
-              approval-safe automation.
+      <nav class="chapter-rail" aria-label="Page chapters">
+        <a href="#top">00</a>
+        <a href="#roots">01</a>
+        <a href="#systems">02</a>
+        <a href="#beacon">03</a>
+        <a href="#contact">04</a>
+      </nav>
+
+      <section id="top" class="cinema-hero cinema-panel" data-stage="roots">
+        <div class="shell cinema-copy hero-copy">
+          <p class="cinema-kicker">Applied AI Solutions / Southern roots / 22nd-century systems</p>
+          <h1>
+            Built from
+            <span>home ground</span>
+            for the future.
+          </h1>
+          <p class="cinema-lead">
+            Not another AI site wearing the same grid and font. This is the working edge:
+            local memory, human approval, machine-scale execution, and roots deep enough
+            to keep the whole thing accountable.
+          </p>
+          <div class="origin-caption" aria-label="Image provenance">
+            <span>Base image</span>
+            <strong>Adam's home hills, retrowave pass</strong>
+          </div>
+          <a class="scroll-cue" href="#roots">Enter the ridge</a>
+        </div>
+      </section>
+
+      <section id="roots" class="cinema-panel cinema-chapter" data-stage="roots">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//01 Roots</span>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              Southern born.
+              <span>Systems raised.</span>
+            </h2>
+            <p>
+              The place matters. The work is not abstract, and neither is trust.
+              Applied AI Solutions starts with the grounded parts of business:
+              reputation, judgment, family pressure, payroll, messy handoffs, and
+              the kind of decisions people still have to own after the model answers.
             </p>
-            <div class="hero-actions">
-              <a class="button" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">
-                Start a strategy call
-              </a>
-              <a class="button secondary" href="/projects/">View our builds</a>
+            <div class="terrain-proof" aria-label="Operating principles">
+              <span>Local first</span>
+              <span>Approval aware</span>
+              <span>Memory with custody</span>
+              <span>Automation that can be audited</span>
             </div>
-            <p class="hero-note">Move your cursor through the system.</p>
+            <a class="read-link" href="#systems">Read more</a>
           </div>
+        </div>
+      </section>
 
-          <div class="workflow-stage" data-workflow-stage data-animate aria-label="Interactive Applied AI workflow system">
-            <div class="workflow-stage-fallback" aria-hidden="true">
-              <img src="/assets/aas-logo-current.jpg" alt="" width="512" height="512" />
-              <span>Documents</span>
-              <span>Approvals</span>
-              <span>Memory</span>
-              <span>Reports</span>
+      <section id="systems" class="cinema-panel cinema-chapter" data-stage="system">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//02 Systems</span>
+            <a href="#top">Back to top</a>
+          </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              The consulting
+              <span>becomes software.</span>
+            </h2>
+            <p>
+              We do not stop at strategy slides. We map the work, capture the
+              knowledge, draw the approval line, and build the operating surface:
+              agents, private retrieval, workflow routes, dashboards, training, and
+              the tests that prove the system is safe enough to keep.
+            </p>
+            <div class="system-phrases" aria-label="Service lanes">
+              <span data-verb="map">Map</span>
+              <span data-verb="remember">Remember</span>
+              <span data-verb="route">Route</span>
+              <span data-verb="approve">Approve</span>
+              <span data-verb="operate">Operate</span>
             </div>
-            <div class="workflow-stage-caption">
-              <span class="status-dot"></span>
-              <strong>Live workflow system</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="beacon" class="cinema-panel cinema-chapter" data-stage="beacon">
+        <div class="shell cinema-chapter-grid">
+          <div class="chapter-meta">
+            <span>//03 Beacon</span>
+            <a href="/beacon/">Explore Beacon</a>
+          </div>
+          <div class="cinema-copy chapter-copy">
+            <h2>
+              The lab has
+              <span>a pulse.</span>
+            </h2>
+            <p>
+              Beacon, ARC, OpenClaw, and LightHouseOS are the product layer under
+              the public promise: voice, memory, goals, tools, approval gates,
+              desktop presence, and a local-first operating layer that can grow
+              without handing the keys to someone else's cloud.
+            </p>
+            <div class="name-stack cinema-name-stack" aria-label="Product names">
+              <a href="/beacon/"><strong>Beacon Voice</strong><span>live collaboration</span></a>
+              <a href="/beacon/"><strong>Beacon Desk</strong><span>desktop presence</span></a>
+              <a href="/projects/"><strong>LightHouseOS</strong><span>local-first agent layer</span></a>
+              <a href="/projects/"><strong>ARC</strong><span>applied responsive companion</span></a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section redesigned-section">
-        <div class="shell split-section">
-          <div class="section-header" data-animate>
-            <p class="eyebrow">Services</p>
-            <h2>Strategy, implementation, and training under one roof.</h2>
-            <p class="section-copy">
-              We keep the work grounded in business outcomes: less time searching, cleaner
-              follow-up, better handoffs, and automation that still leaves important decisions
-              reviewable.
-            </p>
-          </div>
-          <div class="service-list" data-animate>
-            <article>
-              <span>01</span>
-              <h3>AI workflow strategy</h3>
-              <p>Find the use cases worth building and the areas where AI should stay out.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Private knowledge systems</h3>
-              <p>Turn policies, SOPs, documents, and project history into searchable context.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Automation with approvals</h3>
-              <p>Connect tools and workflows while keeping external actions visible.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Team enablement</h3>
-              <p>Train owners and staff with practical playbooks, review points, and standards.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section redesigned-section proof-section">
-        <div class="shell proof-grid" data-animate>
-          <div>
-            <p class="eyebrow">How we work</p>
-            <h2>Built for trust before scale.</h2>
-          </div>
-          <div class="proof-matrix">
-            <article>
-              <strong>Human approval boundaries</strong>
-              <p>Customer messages, account changes, spending, and publishing stay gated.</p>
-            </article>
-            <article>
-              <strong>Local-first product learning</strong>
-              <p>LightHouseOS gives us a real internal lab for memory, goals, tools, voice, and desktop presence.</p>
-            </article>
-            <article>
-              <strong>Professional delivery artifacts</strong>
-              <p>Plans, reports, and demos are designed for operators to scan and trust.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section redesigned-section">
-        <div class="shell feature-callout" data-animate>
-          <div>
-            <p class="eyebrow">Product lab</p>
-            <h2>LightHouseOS is where our agentic business software becomes real.</h2>
-            <p class="section-copy">
-              Beacon Voice and Beacon Desk are the companion surfaces. Underneath them, LightHouseOS
-              is the local-first layer for memory, goals, approvals, documents, tools, and eventually
-              an installable AI workstation environment.
-            </p>
-          </div>
-          <div class="callout-actions">
-            <a class="button beacon-nav" href="/beacon/">Explore Beacon</a>
-            <a class="button secondary" href="/projects/">See project work</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section redesigned-section contact-band">
-        <div class="shell contact-band-inner" data-animate>
-          <div>
-            <p class="eyebrow">Next step</p>
-            <h2>Bring one workflow worth fixing.</h2>
-            <p class="section-copy">
-              Send the business problem, the tools involved, and what slows the team down. We will
-              turn that into a practical first plan.
-            </p>
-          </div>
-          <a class="button" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">
-            Email Applied AI Solutions
-          </a>
+      <section id="contact" class="cinema-panel cinema-chapter cinema-final" data-stage="mark">
+        <div class="shell cinema-copy final-copy">
+          <p class="cinema-kicker">//04 Start</p>
+          <h2>
+            Bring the work
+            <span>that still bites.</span>
+          </h2>
+          <p>
+            The documents. The handoffs. The approvals. The place where everybody
+            knows the current way is leaking time, but nobody trusts a black box
+            enough to fix it. We start there.
+          </p>
+          <a class="button primary" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">Email Applied AI Solutions</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="shell">
-        <a class="footer-brand" href="/" aria-label="Applied AI Solutions home">
-          <img src="/assets/aas-logo-current.jpg" alt="Applied AI Solutions" width="512" height="512" />
-        </a>
-        <span>© {year}</span>
-        <div class="footer-links">
-          <a href="/projects/">Projects</a>
+      <div class="shell footer-inner">
+        <span>© {year} Applied AI Solutions</span>
+        <nav aria-label="Footer navigation">
           <a href="/beacon/">Beacon</a>
+          <a href="/projects/">Projects</a>
           <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
-        </div>
+        </nav>
       </div>
     </footer>
-
     <script>
-      import { animate, inView, stagger } from "motion";
-      import { mountWorkflowPhysics } from "../scripts/workflow-physics.js";
-
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-      mountWorkflowPhysics("[data-workflow-stage]");
-
-      if (!reduceMotion) {
-        inView("[data-animate]", (element) => {
-          animate(
-            element,
-            { opacity: [0, 1], transform: ["translateY(18px)", "translateY(0)"] },
-            { duration: 0.58, delay: stagger(0.035), easing: [0.22, 1, 0.36, 1] }
-          );
-        }, { margin: "0px 0px -10% 0px" });
-      }
+      import "../scripts/site-motion.js";
     </script>
   </body>
 </html>

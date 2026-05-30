@@ -33,8 +33,8 @@ function AasWorkflowDemo() {
     <AbsoluteFill
       style={{
         background:
-          "linear-gradient(135deg, #06111a 0%, #0d2534 48%, #101926 100%)",
-        color: "#f5fbff",
+          "radial-gradient(circle at 50% -18%, rgba(255,46,159,.2), transparent 34%), linear-gradient(135deg, #000 0%, #0b0616 48%, #15082b 100%)",
+        color: "#f7fbff",
         fontFamily:
           '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
         overflow: "hidden",
@@ -59,13 +59,13 @@ function AasWorkflowDemo() {
           height: "140%",
           transform: "rotate(18deg)",
           background:
-            "linear-gradient(90deg, transparent, rgba(39,217,255,.22), transparent)",
+            "linear-gradient(90deg, transparent, rgba(36,230,255,.22), rgba(255,46,159,.16), transparent)",
         }}
       />
       <div style={{ position: "absolute", left: 82, top: 76, width: 760 }}>
         <div
           style={{
-            color: "#bff3ff",
+            color: "#c9f8ff",
             fontSize: 32,
             fontWeight: 800,
             letterSpacing: 0,
@@ -126,10 +126,10 @@ function AasWorkflowDemo() {
                   marginBottom: 34,
                   background:
                     index === 1
-                      ? "#f2c96d"
+                      ? "#ff625f"
                       : index === 2
-                        ? "#65e5ad"
-                        : "#27d9ff",
+                        ? "#ff2e9f"
+                        : "#24e6ff",
                 }}
               />
               <div style={{ fontSize: 28, fontWeight: 760 }}>{scene}</div>
@@ -152,8 +152,8 @@ function BeaconAlphaDemo() {
     <AbsoluteFill
       style={{
         background:
-          "radial-gradient(circle at 50% 48%, rgba(39,217,255,.16), transparent 34%), linear-gradient(135deg, #050b12 0%, #07111f 54%, #111827 100%)",
-        color: "#f5fbff",
+          "radial-gradient(circle at 50% 48%, rgba(36,230,255,.18), transparent 34%), radial-gradient(circle at 42% 20%, rgba(255,46,159,.18), transparent 30%), linear-gradient(135deg, #000 0%, #080414 54%, #15082b 100%)",
+        color: "#f7fbff",
         fontFamily:
           '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif',
         overflow: "hidden",
@@ -178,7 +178,7 @@ function BeaconAlphaDemo() {
           height: "130%",
           transform: "rotate(16deg)",
           background:
-            "linear-gradient(90deg, transparent, rgba(101,229,173,.2), rgba(39,217,255,.24), transparent)",
+            "linear-gradient(90deg, transparent, rgba(255,46,159,.2), rgba(36,230,255,.24), transparent)",
         }}
       />
       <div
@@ -190,14 +190,14 @@ function BeaconAlphaDemo() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          color: "#bff3ff",
+          color: "#c9f8ff",
           fontSize: 28,
           fontWeight: 820,
           textTransform: "uppercase",
         }}
       >
         <span>Beacon Alpha Build</span>
-        <span style={{ color: "#65e5ad" }}>Local-first AI environment</span>
+        <span style={{ color: "#ff2e9f" }}>Local-first AI environment</span>
       </div>
       <div
         style={{
@@ -208,7 +208,7 @@ function BeaconAlphaDemo() {
           height: 470,
           borderRadius: 235,
           border: "1px solid rgba(191,243,255,.24)",
-          boxShadow: `0 0 ${50 + pulse * 42}px rgba(39,217,255,.18)`,
+          boxShadow: `0 0 ${50 + pulse * 42}px rgba(36,230,255,.18)`,
           transform: `scale(${interpolate(intro, [0, 1], [0.9, 1])})`,
           opacity: intro,
         }}
@@ -218,7 +218,7 @@ function BeaconAlphaDemo() {
             position: "absolute",
             inset: 62,
             borderRadius: 180,
-            border: "1px solid rgba(101,229,173,.24)",
+            border: "1px solid rgba(255,46,159,.28)",
           }}
         />
         <div
@@ -231,8 +231,8 @@ function BeaconAlphaDemo() {
             height: 176,
             borderRadius: 46,
             background:
-              "linear-gradient(135deg, rgba(39,217,255,.96), rgba(101,229,173,.82))",
-            boxShadow: "0 28px 90px rgba(39,217,255,.3)",
+              "linear-gradient(135deg, rgba(36,230,255,.96), rgba(255,46,159,.82))",
+            boxShadow: "0 28px 90px rgba(36,230,255,.28)",
           }}
         />
         <div
@@ -243,7 +243,7 @@ function BeaconAlphaDemo() {
             transform: "translate(-50%, -48%)",
             fontSize: 112,
             fontWeight: 900,
-            color: "#06111a",
+            color: "#03040a",
           }}
         >
           A
@@ -264,7 +264,7 @@ function BeaconAlphaDemo() {
         <div
           style={{
             marginTop: 30,
-            color: "#a8bdc8",
+            color: "#8f9aaa",
             fontSize: 30,
             lineHeight: 1.35,
           }}
@@ -298,7 +298,7 @@ function BeaconAlphaDemo() {
                 padding: "20px 22px",
                 background:
                   "linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03))",
-                color: "#f5fbff",
+                color: "#f7fbff",
                 fontSize: 25,
                 fontWeight: 760,
                 opacity: local,
