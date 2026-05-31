@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import IntakeForm from "../components/IntakeForm.astro";
 
 const year = new Date().getFullYear();
 ---
@@ -33,7 +34,7 @@ const year = new Date().getFullYear();
           <a href="/beacon/">Beacon</a>
           <a href="#proof">Proof</a>
           <a href="/#services">Services</a>
-          <a class="nav-cta" href="mailto:info@appliedai.solutions?subject=Applied%20AI%20Project%20Inquiry">Contact</a>
+          <a class="nav-cta" href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -165,16 +166,14 @@ const year = new Date().getFullYear();
 
       <section id="contact" class="cinema-panel cinema-chapter cinema-final" data-stage="mark">
         <div class="shell cinema-copy final-copy">
-          <p class="cinema-kicker">//04 Build</p>
-          <h2>
-            Show us the workflow.
-            <span>We shape the system.</span>
-          </h2>
-          <p>
-            Intake, documents, reports, scheduling, approvals, training, follow-up,
-            or the internal process that everyone knows needs a better operating layer.
-          </p>
-          <a class="button primary" href="mailto:info@appliedai.solutions?subject=Applied%20AI%20Project%20Inquiry">Start a project conversation</a>
+          <IntakeForm
+            eyebrow="//04 Build"
+            title="Show us the workflow."
+            titleAccent="We shape the system."
+            body="Intake, documents, reports, scheduling, approvals, training, follow-up, or the internal process that everyone knows needs a better operating layer."
+            intent="Applied AI Project Inquiry"
+            source="projects"
+          />
         </div>
       </section>
     </main>
@@ -185,6 +184,7 @@ const year = new Date().getFullYear();
         <nav aria-label="Footer navigation">
           <a href="/">Applied AI Solutions</a>
           <a href="/beacon/">Beacon</a>
+          <a href="https://github.com/Applied-AI-Solutions-hub/aas">GitHub</a>
           <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
         </nav>
       </div>

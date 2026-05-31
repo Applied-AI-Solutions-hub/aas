@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import IntakeForm from "../components/IntakeForm.astro";
 
 const year = new Date().getFullYear();
 ---
@@ -33,7 +34,7 @@ const year = new Date().getFullYear();
           <a href="/projects/">Projects</a>
           <a href="#surfaces">Surfaces</a>
           <a href="/#services">Services</a>
-          <a class="nav-cta" href="mailto:info@appliedai.solutions?subject=Beacon%20Product%20Inquiry">Contact</a>
+          <a class="nav-cta" href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -149,9 +150,10 @@ const year = new Date().getFullYear();
               <span>to a product.</span>
             </h2>
             <p>
-              Beacon starts where the work is already happening: Adam's workspace, Discord,
-              the desktop shell, local memory, and OpenClaw. The product path is to keep the
-              same companion backbone while making each surface polished enough for real users.
+              Beacon starts where work is already happening: the working room, the
+              desktop shell, local memory, and governed tool routes. The product path is
+              to keep the same companion backbone while making each surface polished
+              enough for real users.
             </p>
             <div class="cinema-step-line" aria-label="Beacon build path">
               <span><strong>Now</strong> Voice and ARC working together</span>
@@ -164,16 +166,14 @@ const year = new Date().getFullYear();
 
       <section id="contact" class="cinema-panel cinema-chapter cinema-final" data-stage="mark">
         <div class="shell cinema-copy final-copy">
-          <p class="cinema-kicker">//04 Demo</p>
-          <h2>
-            Start with the
-            <span>workflow that needs a companion.</span>
-          </h2>
-          <p>
-            Intake, memory, reports, approvals, follow-up, voice collaboration, or a desktop
-            surface that keeps the work visible without giving away control.
-          </p>
-          <a class="button primary" href="mailto:info@appliedai.solutions?subject=Beacon%20Product%20Inquiry">Contact Applied AI Solutions</a>
+          <IntakeForm
+            eyebrow="//04 Demo"
+            title="Start with the"
+            titleAccent="workflow that needs a companion."
+            body="Intake, memory, reports, approvals, follow-up, voice collaboration, or a desktop surface that keeps the work visible without giving away control."
+            intent="Beacon Product Inquiry"
+            source="beacon"
+          />
         </div>
       </section>
     </main>
@@ -184,6 +184,7 @@ const year = new Date().getFullYear();
         <nav aria-label="Footer navigation">
           <a href="/">Applied AI Solutions</a>
           <a href="/projects/">Projects</a>
+          <a href="https://github.com/Applied-AI-Solutions-hub/aas">GitHub</a>
           <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
         </nav>
       </div>

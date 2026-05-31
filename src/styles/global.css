@@ -1602,6 +1602,116 @@ h3 {
   margin-left: auto;
 }
 
+.intake-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+
+.intake-copy,
+.intake-form {
+  min-width: 0;
+}
+
+.intake-fallback {
+  max-width: 620px;
+  margin-top: 18px;
+  color: rgba(220,232,244,0.66);
+  font-size: 0.96rem;
+}
+
+.intake-fallback a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  color: #b9f6ff;
+  text-underline-offset: 4px;
+}
+
+.intake-form {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid rgba(205,232,244,0.18);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(36,230,255,0.07), transparent 42%),
+    rgba(0,0,0,0.42);
+  box-shadow: 0 24px 90px rgba(0,0,0,0.28);
+  backdrop-filter: blur(18px);
+}
+
+.intake-field {
+  display: grid;
+  gap: 7px;
+}
+
+.intake-field label {
+  color: rgba(247,251,255,0.78);
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 840;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intake-field input,
+.intake-field textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgba(205,232,244,0.18);
+  border-radius: var(--radius);
+  padding: 11px 12px;
+  color: var(--text);
+  background: rgba(2,5,10,0.78);
+  font: 500 0.98rem/1.45 var(--font);
+  outline: none;
+}
+
+.intake-field textarea {
+  resize: vertical;
+  min-height: 132px;
+}
+
+.intake-field input:focus,
+.intake-field textarea:focus {
+  border-color: rgba(36,230,255,0.58);
+  box-shadow: 0 0 0 3px rgba(36,230,255,0.12);
+}
+
+.intake-honey {
+  position: absolute;
+  inset: auto;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.intake-submit {
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  cursor: pointer;
+}
+
+.intake-submit:disabled {
+  cursor: wait;
+  opacity: 0.66;
+  transform: none;
+}
+
+.intake-status {
+  min-height: 34px;
+  margin: 0;
+  color: rgba(220,232,244,0.68);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
 .motion-ready:not(.reduce-motion) .stage-grid {
   animation: grid-drive 7s linear infinite;
 }
@@ -1634,6 +1744,7 @@ h3 {
   .cinema-chapter-grid { grid-template-columns: 1fr; }
   .cinema-page .chapter-meta { position: static; }
   .cinema-name-stack { grid-template-columns: 1fr; }
+  .intake-layout { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {

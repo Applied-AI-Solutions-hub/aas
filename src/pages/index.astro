@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import IntakeForm from "../components/IntakeForm.astro";
 
 const year = new Date().getFullYear();
 ---
@@ -33,7 +34,7 @@ const year = new Date().getFullYear();
           <a href="/beacon/">Beacon</a>
           <a href="/projects/">Projects</a>
           <a href="#services">Services</a>
-          <a class="nav-cta" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">Contact</a>
+          <a class="nav-cta" href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -41,7 +42,7 @@ const year = new Date().getFullYear();
     <main class="cinema-main">
       <div class="cinema-stage" aria-hidden="true">
         <canvas class="cinema-webgl" data-cinema-scene></canvas>
-        <img class="stage-image stage-image-roots" src="/assets/retrowave/adam-hills-origin.jpg" alt="" width="763" height="250" />
+        <img class="stage-image stage-image-roots" src="/assets/retrowave/southern-roots-origin.jpg" alt="" width="763" height="250" />
         <img class="stage-image stage-image-system" src="/assets/retrowave/retrowave-system-banner.jpg" alt="" width="1500" height="500" />
         <img class="stage-image stage-image-mark" src="/assets/logo-system/aas-mountain-aa-v4-summit-mark.svg" alt="" width="512" height="512" />
         <div class="ridge-map">
@@ -80,7 +81,7 @@ const year = new Date().getFullYear();
           </p>
           <div class="origin-caption" aria-label="Image provenance">
             <span>Base image</span>
-            <strong>Adam's home hills, retrowave pass</strong>
+            <strong>Southern roots, future-facing systems</strong>
           </div>
           <a class="scroll-cue" href="#roots">Enter the ridge</a>
         </div>
@@ -171,17 +172,14 @@ const year = new Date().getFullYear();
 
       <section id="contact" class="cinema-panel cinema-chapter cinema-final" data-stage="mark">
         <div class="shell cinema-copy final-copy">
-          <p class="cinema-kicker">//04 Start</p>
-          <h2>
-            Bring the work
-            <span>that still bites.</span>
-          </h2>
-          <p>
-            The documents. The handoffs. The approvals. The place where everybody
-            knows the current way is leaking time, but nobody trusts a black box
-            enough to fix it. We start there.
-          </p>
-          <a class="button primary" href="mailto:info@appliedai.solutions?subject=AI%20Workflow%20Consultation">Email Applied AI Solutions</a>
+          <IntakeForm
+            eyebrow="//04 Start"
+            title="Bring the work"
+            titleAccent="that still bites."
+            body="The documents. The handoffs. The approvals. The place where everybody knows the current way is leaking time, but nobody trusts a black box enough to fix it. We start there."
+            intent="AI Workflow Consultation"
+            source="home"
+          />
         </div>
       </section>
     </main>
@@ -192,6 +190,7 @@ const year = new Date().getFullYear();
         <nav aria-label="Footer navigation">
           <a href="/beacon/">Beacon</a>
           <a href="/projects/">Projects</a>
+          <a href="https://github.com/Applied-AI-Solutions-hub/aas">GitHub</a>
           <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a>
         </nav>
       </div>

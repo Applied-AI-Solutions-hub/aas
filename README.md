@@ -1,8 +1,15 @@
 # Applied AI Solutions Website
 
-Fresh Astro build for `appliedai.solutions`.
+Public Astro build for `appliedai.solutions`.
 
-The first screen is still in an opening-soon posture, but the site now has a real product direction around:
+## Public Links
+
+- Website: https://appliedai.solutions/
+- Beacon: https://appliedai.solutions/beacon/
+- Projects: https://appliedai.solutions/projects/
+- Contact: info@appliedai.solutions
+
+The site presents Applied AI Solutions around:
 
 - Applied AI Solutions as the main brand
 - Beacon as the local-first companion/product surface
@@ -30,6 +37,37 @@ npm run media:beacon-cutout
 - Canonical Applied AI logo assets
 - Beacon hoodie mascot asset
 - Three.js Beacon hero stage with Blender GLB handoff
+- Cloudflare Worker intake endpoint at `/api/intake`
+
+## Intake Form
+
+The public contact sections submit to the Worker endpoint at `/api/intake`
+instead of relying on a visitor's mail app. The Worker expects a Cloudflare KV
+binding named `LEADS`.
+
+Before deploying intake publicly:
+
+```bash
+npx wrangler kv namespace create LEADS
+```
+
+Then add the returned production namespace id to `wrangler.jsonc`:
+
+```jsonc
+"kv_namespaces": [
+  { "binding": "LEADS", "id": "production_namespace_id" }
+]
+```
+
+Optional email notification uses Resend:
+
+```bash
+npx wrangler secret put RESEND_API_KEY
+npx wrangler secret put NOTIFY_EMAIL
+npx wrangler secret put RESEND_FROM
+```
+
+KV capture is the source of truth; email notification is only a convenience.
 
 ## Beacon Media Pipeline
 
