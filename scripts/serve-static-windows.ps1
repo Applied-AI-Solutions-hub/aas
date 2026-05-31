@@ -1,5 +1,5 @@
 param(
-  [string]$Root = "\\wsl.localhost\Ubuntu\home\s1tba\.openclaw\workspace\github-repos\aas\dist",
+  [string]$Root = (Join-Path (Split-Path -Parent $PSScriptRoot) "dist"),
   [int]$Port = 8787
 )
 

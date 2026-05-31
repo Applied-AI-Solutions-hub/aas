@@ -19,7 +19,7 @@ function findBrowser() {
     return process.env.BROWSER_EXECUTABLE;
   }
 
-  const cacheRoot = path.join(process.env.HOME || "", ".cache", "openclaw-browsers", "chrome-headless-shell");
+  const cacheRoot = path.join(process.env.HOME || "", ".cache", "aas-browsers", "chrome-headless-shell");
   if (!fs.existsSync(cacheRoot)) return null;
 
   const candidates = fs
@@ -40,7 +40,7 @@ const browserPath = findBrowser();
 
 if (!browserPath) {
   console.error("No browser executable found. Run:");
-  console.error("npx @puppeteer/browsers install chrome-headless-shell@stable --path ~/.cache/openclaw-browsers");
+  console.error("npx @puppeteer/browsers install chrome-headless-shell@stable --path ~/.cache/aas-browsers");
   process.exit(2);
 }
 
