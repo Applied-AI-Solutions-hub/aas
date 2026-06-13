@@ -1,0 +1,166 @@
+---
+import "../styles/global.css";
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Azimuth pricing — local-first AI that's genuinely yours. Free forever for the core; pay only for tuning, scale, and support."
+    />
+    <meta name="theme-color" content="#02050a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260530" />
+    <link rel="alternate icon" href="/favicon.ico?v=20260530" />
+    <title>Azimuth Pricing | Applied AI Solutions</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="/">
+          <img src="/assets/logo-system/aas-mountain-aa-v4-summit-mark.svg" alt="Applied AI Solutions" width="512" height="512" />
+          <span>
+            <strong>Applied AI</strong>
+            <small>Solutions</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/beacon/">Beacon</a>
+          <a href="/projects/">Projects</a>
+          <a href="/pricing/">Pricing</a>
+          <a class="nav-cta" href="/#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="azp">
+      <div class="azp-glow" aria-hidden="true"></div>
+      <div class="azp-floor" aria-hidden="true"></div>
+
+      <section class="azp-hero shell">
+        <svg class="azp-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="azRing" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffe96b" /><stop offset=".5" stop-color="#ff7a59" /><stop offset="1" stop-color="#ff2e93" />
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="18" fill="none" stroke="url(#azRing)" stroke-width="3.4" />
+          <path d="M32 14 L38 34 L32 30 L26 34 Z" fill="#36e2ff" />
+          <path d="M32 50 L26 34 L32 38 L38 34 Z" fill="none" stroke="url(#azRing)" stroke-width="1.8" />
+          <circle cx="32" cy="32" r="2.3" fill="#0a0610" stroke="#36e2ff" stroke-width="1.2" />
+        </svg>
+        <p class="azp-eyebrow">Azimuth</p>
+        <h1>Pricing</h1>
+        <p class="azp-lede">Local-first AI that's genuinely yours. Pay only for more power — never for privacy.</p>
+        <p class="azp-trust"><span>&#9679;</span> <strong>Free forever for the core.</strong> We charge for tuning, scale, and support — not your data.</p>
+      </section>
+
+      <section class="azp-tiers shell">
+        <article class="azp-tier">
+          <h2>Free</h2>
+          <p class="azp-who">Your agent, on your machine. For hobbyists and anyone trying it out.</p>
+          <p class="azp-price"><b>$0</b><span>forever</span></p>
+          <p class="azp-sub">No account required.</p>
+          <ul>
+            <li>One agent, fully on-device — offline &amp; private</li>
+            <li>Routing engine + self-refine reasoning</li>
+            <li>Core tools, plus write your own</li>
+            <li>Setup wizard, health doctor, local memory</li>
+            <li>Bring your own Codex / Grok &amp; Discord</li>
+          </ul>
+          <a class="azp-cta" href="/#contact">Download</a>
+        </article>
+
+        <article class="azp-tier azp-pop">
+          <span class="azp-badge">Most popular</span>
+          <h2>Pro</h2>
+          <p class="azp-who">Tune it, see it, never lose it. For the person who relies on it daily.</p>
+          <p class="azp-price azp-grad"><b>$15</b><span>/ month</span></p>
+          <p class="azp-sub">or $144/yr (save 20%) · 14-day trial</p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Analytics dashboard — what routed where &amp; why</li>
+            <li>Eval &amp; tuning suite — your tests, prompt optimization</li>
+            <li>Encrypted multi-device memory sync + backups</li>
+            <li>Premium connectors (Gmail, Calendar, Notion, GitHub…)</li>
+            <li>Multiple agents</li>
+          </ul>
+          <a class="azp-cta azp-primary" href="/#contact">Start free trial</a>
+        </article>
+
+        <article class="azp-tier">
+          <h2>Enterprise</h2>
+          <p class="azp-who">Run it across a team, reliably, with humans to call.</p>
+          <p class="azp-price"><b>$40</b><span>/ seat / mo</span></p>
+          <p class="azp-sub">Annual · 5-seat minimum · + setup</p>
+          <ul>
+            <li>Everything in Pro, per seat</li>
+            <li>Team agents + shared, scoped memory</li>
+            <li>Admin governance — audit, roles, SSO</li>
+            <li>Fleet dashboard — every agent's health</li>
+            <li>Reliability: monitoring, alerting, SLA</li>
+            <li>Custom integrations + AAS support</li>
+          </ul>
+          <a class="azp-cta" href="/#contact">Talk to us</a>
+        </article>
+      </section>
+
+      <p class="azp-flow shell"><b>it runs</b> <span>&rarr;</span> <b>it improves &amp; persists</b> <span>&rarr;</span> <b>it scales &amp; is guaranteed</b></p>
+
+      <footer class="azp-foot shell">Azimuth · created by Applied AI Solutions · {year} · Launch pricing, subject to validation</footer>
+    </main>
+
+    <style>
+      .azp{position:relative;overflow:hidden;background:#07040d;color:#f4f1f8;padding:0 0 64px;
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+      .azp-glow{position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:960px;height:560px;
+        border-radius:50%;pointer-events:none;background:radial-gradient(closest-side,rgba(255,46,147,.26),rgba(160,107,255,.13) 45%,transparent 72%)}
+      .azp-floor{position:absolute;left:-20%;right:-20%;bottom:-8%;height:44vh;pointer-events:none;opacity:.45;
+        background-image:repeating-linear-gradient(90deg,rgba(54,226,255,.5) 0 1px,transparent 1px 64px),repeating-linear-gradient(0deg,rgba(255,46,147,.45) 0 1px,transparent 1px 52px);
+        transform:perspective(50vh) rotateX(74deg);transform-origin:bottom center;
+        -webkit-mask-image:linear-gradient(to top,#000,transparent 82%);mask-image:linear-gradient(to top,#000,transparent 82%)}
+      .azp .shell{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 22px}
+      .azp-hero{text-align:center;padding-top:62px;padding-bottom:14px}
+      .azp-mark{width:112px;height:112px;filter:drop-shadow(0 0 18px rgba(255,46,147,.55)) drop-shadow(0 0 9px rgba(54,226,255,.45))}
+      .azp-eyebrow{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:#9aa0b5;margin:18px 0 8px}
+      .azp h1{font-size:clamp(46px,9vw,80px);line-height:1;font-weight:700;margin:0 0 14px;letter-spacing:-.02em;
+        background:linear-gradient(135deg,#36e2ff,#a06bff 55%,#ff2e93);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .azp-lede{color:#c3c6d6;font-size:clamp(16px,2.4vw,19px);max-width:540px;margin:0 auto 20px}
+      .azp-trust{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:#cfd2e0;
+        background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:999px;padding:9px 18px}
+      .azp-trust span{color:#36e2ff}.azp-trust strong{color:#fff}
+      .azp-tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:34px}
+      .azp-tier{position:relative;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.10);
+        border-radius:20px;padding:30px 26px;display:flex;flex-direction:column}
+      .azp-pop{background:linear-gradient(#100a1c,#0c0816) padding-box,linear-gradient(135deg,#36e2ff,#a06bff 55%,#ff2e93) border-box;
+        border:1.6px solid transparent;box-shadow:0 0 44px rgba(255,46,147,.22),0 0 22px rgba(54,226,255,.14)}
+      .azp-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+        background:linear-gradient(135deg,#36e2ff,#ff2e93);color:#0a0610;font-size:11.5px;font-weight:700;
+        letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-radius:999px}
+      .azp-tier h2{font-size:15px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#36e2ff;margin:0 0 6px}
+      .azp-pop h2{background:linear-gradient(135deg,#36e2ff,#ff2e93);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .azp-who{color:#9aa0b5;font-size:13.5px;margin:0 0 20px;min-height:40px}
+      .azp-price{display:flex;align-items:baseline;gap:7px;margin:0 0 3px}
+      .azp-price b{font-size:44px;font-weight:700;letter-spacing:-.02em}
+      .azp-grad b{background:linear-gradient(135deg,#36e2ff,#ff2e93);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .azp-price span{color:#9aa0b5;font-size:15px}
+      .azp-sub{color:#9aa0b5;font-size:12.5px;margin:0 0 24px;min-height:18px}
+      .azp-tier ul{list-style:none;padding:0;margin:0 0 26px;flex:1}
+      .azp-tier li{position:relative;padding:7px 0 7px 26px;font-size:14.5px;color:#dcdfeb}
+      .azp-tier li::before{content:"✓";position:absolute;left:0;color:#36e2ff;font-weight:700}
+      .azp-cta{display:block;text-align:center;text-decoration:none;font-size:15px;font-weight:600;
+        padding:13px 18px;border-radius:13px;border:1px solid rgba(255,255,255,.14);color:#fff;transition:transform .15s,background .2s}
+      .azp-cta:hover{transform:translateY(-2px);background:rgba(255,255,255,.06)}
+      .azp-primary{border:none;background:linear-gradient(135deg,#36e2ff,#a06bff 55%,#ff2e93);color:#0a0610;box-shadow:0 0 26px rgba(255,46,147,.4)}
+      .azp-primary:hover{box-shadow:0 0 40px rgba(255,46,147,.6)}
+      .azp-flow{text-align:center;color:#9aa0b5;font-size:14px;margin:42px auto 0}
+      .azp-flow b{color:#fff;font-weight:600}.azp-flow span{color:#36e2ff;opacity:.7}
+      .azp-foot{text-align:center;color:#9aa0b5;font-size:12.5px;margin-top:40px;border-top:1px solid rgba(255,255,255,.10);padding-top:22px}
+    </style>
+  </body>
+</html>
