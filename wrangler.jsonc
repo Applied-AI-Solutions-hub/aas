@@ -1,9 +1,14 @@
-{
+﻿{
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "aas",
+  "name": "appliedai-solutions",
   "main": "src/worker.js",
   "compatibility_date": "2026-05-25",
   "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "appliedai.solutions/*", "zone_name": "appliedai.solutions" },
+    { "pattern": "www.appliedai.solutions/*", "zone_name": "appliedai.solutions" }
+  ],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
