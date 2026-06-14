@@ -1,0 +1,123 @@
+---
+import "../styles/global.css";
+
+// ── TRIP DATA ─ Sparky edits these as we travel. Keep it short and current. ──
+const current = { place: "Knoxville, TN", since: "June 13" };
+const next = [
+  { place: "Asheville, NC", date: "Jun 16" },
+  { place: "Charlotte, NC", date: "Jun 19" },
+  { place: "Atlanta, GA", date: "Jun 23" },
+];
+const been = [
+  { place: "Nashville, TN", date: "Jun 9" },
+  { place: "Memphis, TN", date: "Jun 6" },
+  { place: "Little Rock, AR", date: "Jun 3" },
+];
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Where Applied AI Solutions is on the road right now — current stop and what's next." />
+    <meta name="theme-color" content="#02050a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260530" />
+    <link rel="alternate icon" href="/favicon.ico?v=20260530" />
+    <title>On the road | Applied AI Solutions</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="/">
+          <img src="/assets/logo-system/aas-mountain-aa-v4-summit-mark.svg" alt="Applied AI Solutions" width="512" height="512" />
+          <span><strong>Applied AI</strong><small>Solutions</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/beacon/">Beacon</a>
+          <a href="/projects/">Projects</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/trip/">On the road</a>
+          <a class="nav-cta" href="/#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="trip">
+      <div class="trip-glow" aria-hidden="true"></div>
+      <div class="trip-floor" aria-hidden="true"></div>
+
+      <section class="shell trip-hero">
+        <p class="trip-eyebrow">Applied AI Solutions · on the road</p>
+        <h1>Where we are</h1>
+        <div class="now">
+          <span class="ping" aria-hidden="true"></span>
+          <div>
+            <strong>{current.place}</strong>
+            <small>since {current.since}</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell trip-cols">
+        <div class="col">
+          <h2>Next stops</h2>
+          <ul class="stops">
+            {next.map((s) => (
+              <li><span class="dot"></span><span class="pl">{s.place}</span><span class="dt">{s.date}</span></li>
+            ))}
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Where we've been</h2>
+          <ul class="stops past">
+            {been.map((s) => (
+              <li><span class="dot"></span><span class="pl">{s.place}</span><span class="dt">{s.date}</span></li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <p class="shell trip-note">Local-first AI, built from the road. This page updates as we move — a living map is coming next.</p>
+      <footer class="shell trip-foot">Applied AI Solutions · {year}</footer>
+    </main>
+
+    <style>
+      .trip{position:relative;overflow:hidden;background:#07040d;color:#f4f1f8;padding:0 0 60px;
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+      .trip-glow{position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:920px;height:540px;border-radius:50%;
+        pointer-events:none;background:radial-gradient(closest-side,rgba(54,226,255,.22),rgba(160,107,255,.12) 46%,transparent 72%)}
+      .trip-floor{position:absolute;left:-20%;right:-20%;bottom:-8%;height:42vh;pointer-events:none;opacity:.4;
+        background-image:repeating-linear-gradient(90deg,rgba(54,226,255,.5) 0 1px,transparent 1px 64px),repeating-linear-gradient(0deg,rgba(255,46,147,.45) 0 1px,transparent 1px 52px);
+        transform:perspective(50vh) rotateX(74deg);transform-origin:bottom center;
+        -webkit-mask-image:linear-gradient(to top,#000,transparent 82%);mask-image:linear-gradient(to top,#000,transparent 82%)}
+      .trip .shell{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:0 22px}
+      .trip-hero{text-align:center;padding-top:60px}
+      .trip-eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#9aa0b5;margin:0 0 10px}
+      .trip h1{font-size:clamp(40px,8vw,68px);line-height:1;font-weight:700;margin:0 0 24px;letter-spacing:-.02em;
+        background:linear-gradient(135deg,#36e2ff,#a06bff 55%,#ff2e93);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .now{display:inline-flex;align-items:center;gap:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);
+        border-radius:16px;padding:16px 24px;text-align:left}
+      .now strong{display:block;font-size:22px;font-weight:600}
+      .now small{color:#9aa0b5;font-size:13px}
+      .ping{width:13px;height:13px;border-radius:50%;background:#36e2ff;position:relative;flex:none;box-shadow:0 0 12px #36e2ff}
+      .ping::after{content:"";position:absolute;inset:-6px;border-radius:50%;background:#36e2ff;opacity:.4;animation:ping 1.8s ease-out infinite}
+      @keyframes ping{0%{transform:scale(.5);opacity:.5}100%{transform:scale(2.4);opacity:0}}
+      .trip-cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}
+      @media(max-width:640px){.trip-cols{grid-template-columns:1fr}}
+      .col{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:22px 24px}
+      .col h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#36e2ff;font-weight:600;margin:0 0 16px}
+      .stops{list-style:none;padding:0;margin:0}
+      .stops li{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid rgba(255,255,255,.08);font-size:15px}
+      .stops li:first-child{border-top:none}
+      .stops .dot{width:8px;height:8px;border-radius:50%;background:#ff2e93;flex:none}
+      .past .dot{background:#5f6b7a}
+      .stops .pl{flex:1;color:#e8eaf2}
+      .stops .dt{color:#9aa0b5;font-size:13px}
+      .trip-note{text-align:center;color:#9aa0b5;font-size:14px;margin:38px auto 0;max-width:560px}
+      .trip-foot{text-align:center;color:#7c8190;font-size:12.5px;margin-top:30px;border-top:1px solid rgba(255,255,255,.10);padding-top:20px}
+    </style>
+  </body>
+</html>
