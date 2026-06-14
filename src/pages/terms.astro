@@ -1,0 +1,107 @@
+---
+import "../styles/global.css";
+const updated = "June 13, 2026";
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Applied AI Solutions terms of service." />
+    <meta name="theme-color" content="#02050a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260530" />
+    <link rel="alternate icon" href="/favicon.ico?v=20260530" />
+    <title>Terms of Service | Applied AI Solutions</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="/">
+          <img src="/assets/logo-system/aas-mountain-aa-v4-summit-mark.svg" alt="Applied AI Solutions" width="512" height="512" />
+          <span><strong>Applied AI</strong><small>Solutions</small></span>
+        </a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/beacon/">Beacon</a>
+          <a href="/projects/">Projects</a>
+          <a class="nav-cta" href="/#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="legal">
+      <div class="shell">
+        <h1>Terms of Service</h1>
+        <p class="upd">Last updated: {updated}</p>
+
+        <p>These terms govern your use of the Applied AI Solutions website at
+          appliedai.solutions ("the Site") and any software, tools, or content we make
+          available through it. By using the Site, you agree to these terms. If you don't
+          agree, please don't use the Site.</p>
+
+        <h2>What we provide</h2>
+        <p>The Site shares information about Applied AI Solutions and our work, including
+          our local-first AI projects such as Azimuth. Some content is informational only
+          and may change or be removed at any time.</p>
+
+        <h2>Acceptable use</h2>
+        <ul>
+          <li>Don't use the Site for any unlawful purpose or in a way that could damage,
+            disable, or impair it.</li>
+          <li>Don't attempt to gain unauthorized access to any part of the Site, its
+            servers, or connected systems.</li>
+          <li>Don't scrape, overload, or interfere with the Site's normal operation.</li>
+        </ul>
+
+        <h2>Intellectual property</h2>
+        <p>The Site's content, branding, and design are owned by Applied AI Solutions or
+          its licensors, unless stated otherwise. Open-source software we publish is
+          governed by its own license, which controls where it applies.</p>
+
+        <h2>Software &amp; services "as is"</h2>
+        <p>Any software, tools, or information we provide are offered on an "as is" and
+          "as available" basis, without warranties of any kind, express or implied,
+          including fitness for a particular purpose. You are responsible for evaluating
+          whether they fit your needs.</p>
+
+        <h2>Limitation of liability</h2>
+        <p>To the fullest extent permitted by law, Applied AI Solutions is not liable for
+          any indirect, incidental, or consequential damages arising from your use of the
+          Site or anything obtained through it.</p>
+
+        <h2>Third-party links</h2>
+        <p>The Site may link to third-party sites or services we don't control. We're not
+          responsible for their content or practices.</p>
+
+        <h2>Changes</h2>
+        <p>We may update these terms from time to time. The date above shows the latest
+          version, and continued use of the Site means you accept the changes.</p>
+
+        <h2>Governing law</h2>
+        <p>These terms are governed by the laws of the state in which Applied AI Solutions
+          operates, without regard to conflict-of-law rules.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about these terms? <a href="mailto:info@appliedai.solutions">info@appliedai.solutions</a></p>
+      </div>
+      <footer class="shell legal-foot">Applied AI Solutions · {year}</footer>
+    </main>
+
+    <style>
+      .legal{background:#07040d;color:#e7e9ee;padding:48px 0 64px;
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+      .legal .shell{max-width:760px;margin:0 auto;padding:0 22px}
+      .legal h1{font-size:38px;font-weight:700;margin:0 0 6px;letter-spacing:-.02em;
+        background:linear-gradient(135deg,#36e2ff,#a06bff 55%,#ff2e93);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .legal .upd{color:#9aa0b5;font-size:13px;margin:0 0 28px}
+      .legal h2{font-size:19px;font-weight:600;color:#fff;margin:30px 0 8px}
+      .legal p,.legal li{font-size:15.5px;color:#c8ccd8}
+      .legal ul{padding-left:20px;margin:8px 0}
+      .legal li{margin:6px 0}
+      .legal a{color:#36e2ff}
+      .legal-foot{color:#7c8190;font-size:12.5px;margin-top:40px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px}
+    </style>
+  </body>
+</html>
