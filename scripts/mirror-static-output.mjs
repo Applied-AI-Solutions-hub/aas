@@ -1,7 +1,10 @@
 import { cpSync, existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const distDir = new URL("../dist", import.meta.url).pathname;
+// fileURLToPath (not URL.pathname) so this works on Windows too — pathname yields
+// a leading-slash "/C:/..." path that existsSync can't resolve.
+const distDir = fileURLToPath(new URL("../dist", import.meta.url));
 const clientDir = join(distDir, "client");
 
 if (!existsSync(distDir)) {
